@@ -5,7 +5,7 @@ aeyakovenko@gmail.com
 
 ### SUMMARY
 
-Software developer with over 10 years of experience and developing [patents], working on embedded operating systems, leading projects and contributing to large groups including [Linux Kernel], with a focus on performance and optimization for Qualcomm ARM and DSP processors.
+Software developer with over 10 years of experience in embedded operating systems, developing [patents], leading projects and contributing to large groups including [Linux Kernel], with a focus on performance and optimization for Qualcomm ARM and DSP processors.
 
 ### Skills
 
