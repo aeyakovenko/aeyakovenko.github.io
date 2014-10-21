@@ -35,7 +35,7 @@ Embedded Operating Systems, Linux Kernel, Android, Qualcomm MSMs, System MMUs, A
 #### Alescere LLC, Lisle IL, 2001 to 2003
 ##### Co-Founder, 2001 to 2003
    * Founding member of [Alescere], a VOIP startup
-   * SIP and RTP protocol stacks, and server components for a VoIP system for small businesses
+   * SIP and [RTP] protocol stacks, and server components for a VoIP system for small businesses
 
 #### University of Illinois at Urbana-Champaign
 ##### Research Assistant, 2003
@@ -56,3 +56,4 @@ Embedded Operating Systems, Linux Kernel, Android, Qualcomm MSMs, System MMUs, A
 [Hexagon SDK]: https://developer.qualcomm.com/mobile-development/maximize-hardware/multimedia-optimization-hexagon-sdk
 [patents]: https://www.google.com/search?tbo=p&tbm=pts&hl=en&q=ininventor:%22Anatoly+E.+Yakovenko%22
 [Alescere]: http://www.linuxjournal.com/article/6763
+[RTP]: http://gst-plugins-farsight.sourcearchive.com/documentation/0.12.10-3/jrtplib__c_8cpp-source.html
