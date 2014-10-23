@@ -10,6 +10,7 @@ Software developer with over 10 years of experience in embedded operating system
 ### SKILLS
 #### Hardware and Systems
   * Embedded Operating Systems, Linux Kernel, Android, Qualcomm MSMs, System MMUs, ARM, Hexagon DSP
+
 #### Languages and Tools
   * C, C++, Haskell, Lua, Make, Python, Ruby, Git, Perforce, GDB, Trace32
 
