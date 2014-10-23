@@ -8,8 +8,10 @@ aeyakovenko@gmail.com
 Software developer with over 10 years of experience in embedded operating systems, developing [patents], leading projects and contributing to large groups including [Linux Kernel], with a focus on performance and optimization for Qualcomm ARM and DSP processors.
 
 ### SKILLS
-
-Embedded Operating Systems, Linux Kernel, Android, Qualcomm MSMs, System MMUs, ARM, Hexagon DSP, C, C++, Haskell, Lua, Make, Python, Ruby, Git, Perforce, GDB, Trace32
+#### Hardware and Systems
+  * Embedded Operating Systems, Linux Kernel, Android, Qualcomm MSMs, System MMUs, ARM, Hexagon DSP
+#### Languages and Tools
+  * C, C++, Haskell, Lua, Make, Python, Ruby, Git, Perforce, GDB, Trace32
 
 ### WORK EXPERIENCE
 #### Qualcomm, San Diego CA
