@@ -1,7 +1,7 @@
 ANATOLY YAKOVENKO
 -----------------
 
-aeyakovenko@gmail.com   
+aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [LinkedIn](https://www.linkedin.com/profile/view?id=312504086)
 
 ### SUMMARY
 
