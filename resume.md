@@ -51,7 +51,7 @@ Software developer with over 10 years of experience in embedded operating system
 
 ### EDUCATION
 #### Bachelor of Science in Computer Science
-##### University of Illinois Urbana-Champaign, 2003
+##### University of Illinois at Urbana-Champaign, 2003
 
 [20140136817]: https://www.google.com/patents/US20140136817
 [20140096148]: https://www.google.com/patents/US20140096148
