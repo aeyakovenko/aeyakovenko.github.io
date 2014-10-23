@@ -35,7 +35,7 @@ Software developer with over 10 years of experience in embedded operating system
    * Network components using SIP/HTTP/RTP and proprietary standards for QChat push to talk service
    * High performance logging tools to handle tens of thousands of transactions per second from many networked components
 
-#### Alescere LLC, Lisle IL, 2001 to 2003
+#### Alescere LLC, Lisle IL
 ##### Co-Founder, 2001 to 2003
    * Founding member of [Alescere], a VOIP startup
    * SIP and [RTP] protocol stacks, and server components for a VoIP system for small businesses
