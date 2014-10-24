@@ -70,11 +70,11 @@ h2 {
   color: black; }
 
 h3 {
-  font-size: 26px;
+  font-size: 20px;
 font-weight: normal;}
 
 h4 {
-  font-size: 20px;
+  font-size: 16px;
 font-weight: normal;
 font-style: italic;}
 
@@ -288,6 +288,7 @@ pre {
   pre code, pre tt {
     background-color: transparent;
     border: none; }
+
 
 
 
