@@ -22,7 +22,7 @@ Software developer with over 10 years of experience in embedded operating system
 ##### Engineer, 2003 - 2006
    * Achieved 10x performance improvement in subsystem communication via FastRPC, a bridge between the DSP co-processor and ARM processor for high performance applications.  Ported to Windows, Qnx, Android [Linux Kernel].  Patents: [20140136817], [20140096148]
    * IDL (Interface Description Language) compiler for [Hexagon SDK]
-   * Dynamic linker for loading dynamic processes on Qualcomms embedded DSP OS
+   * Dynamic linker for loading dynamic processes on Qualcomm's embedded DSP OS
    * Dynamic module framework for loading shared objects on DSP from the application processor
    * Capability based application framework for BREW (Qualcomm's Mobile Operating System)
    * Component Object Model IPC (Inter-Process Communication) implementation for BREW
