@@ -30,15 +30,15 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <body>
 <h1 id="notes">notes</h1>
 <h2 id="disable-warnings-in-gcc">disable warnings in gcc</h2>
-<pre class="sourceCode C"><code class="sourceCode c"><span class="ot">#pragma GCC system_header</span></code></pre>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#pragma GCC system_header</span></code></pre>
 <p>works great for generated code.</p>
 <h2 id="cgdb-highlight-current-line">cgdb, highlight current line</h2>
-<pre class="VimL"><code>:hi SelectedLineNr cterm=reverse</code></pre>
+<pre class="viml"><code>:hi SelectedLineNr cterm=reverse</code></pre>
 <h2 id="printing-all-the-gcc-defines">printing all the gcc defines</h2>
 <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">gcc</span> -dM -E - <span class="kw">&lt;</span> /dev/null</code></pre>
 <h2 id="foldr-map-and-curry-in-the-c-preprocessor-language">foldr map and curry in the C preprocessor language</h2>
 <p>Might as well do scheme next :).</p>
-<pre class="sourceCode C"><code class="sourceCode c"><span class="co">//compile assert macro</span>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="co">//compile assert macro</span>
 <span class="ot">#define C_ASSERT(test) \</span>
     <span class="kw">switch</span>(<span class="dv">0</span>) {\
       <span class="kw">case</span> <span class="dv">0</span>:\
@@ -158,7 +158,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <span class="kw">return</span> <span class="dv">0</span>;
 }</code></pre>
 <h2 id="counting-args-with-c-macros">counting args with C macros</h2>
-<pre class="sourceCode C"><code class="sourceCode c"><span class="co">/**</span>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="co">/**</span>
 <span class="co"> * we need a comma at the start for ##_VA_ARGS__ to consume then</span>
 <span class="co"> * the arguments are pushed out in such a way that &#39;cnt&#39; ends up with</span>
 <span class="co"> * the right count.  </span>
@@ -183,16 +183,16 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <span class="kw">return</span> <span class="dv">0</span>;
 }</code></pre>
 <h2 id="compile-time-assert">compile time assert</h2>
-<pre class="sourceCode C"><code class="sourceCode c"><span class="ot">#define C_ASSERT(test) \</span>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#define C_ASSERT(test) \</span>
     <span class="kw">switch</span>(<span class="dv">0</span>) {\
       <span class="kw">case</span> <span class="dv">0</span>:\
       <span class="kw">case</span> test:;\
     }</code></pre>
 <h2 id="make-repl-sort-of">make repl, sort of</h2>
-<pre class="sourceCode Makefile"><code class="sourceCode makefile"><span class="co">#run make &#39;$(expression)&#39; to see what make thinks the expression evaluates to from your rules</span>
+<pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#run make &#39;$(expression)&#39; to see what make thinks the expression evaluates to from your rules</span>
 <span class="dv">$$%:</span><span class="dt">;@</span><span class="ch">$(</span><span class="kw">call</span><span class="st"> true</span><span class="ch">)$(</span><span class="kw">info</span><span class="st"> </span><span class="ch">$(</span><span class="kw">call</span><span class="st"> or</span><span class="kw">,</span><span class="ch">$$$*))</span></code></pre>
 <h2 id="make-cabal">make + cabal</h2>
-<pre class="sourceCode Makefile"><code class="sourceCode makefile"><span class="co">#run make T=target to trigger the build for target exe</span>
+<pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#run make T=target to trigger the build for target exe</span>
 <span class="dt">O</span><span class="ch">=</span><span class="st">dist/build</span>
 <span class="dt">D</span><span class="ch">=</span><span class="st">dist/setup-config</span>
 <span class="dt">A</span><span class="ch">=</span><span class="st">#</span>
@@ -215,7 +215,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
     cabal configure
     touch <span class="ch">$@</span></code></pre>
 <h2 id="vimrc">.vimrc</h2>
-<pre class="VimL"><code>&quot;remembering cursor position between sessions
+<pre class="viml"><code>&quot;remembering cursor position between sessions
 :set viminfo=&#39;10,\&quot;100,:20,%,n~/.viminfo
       
 function! ResCur()

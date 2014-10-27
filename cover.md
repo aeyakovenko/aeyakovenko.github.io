@@ -1,0 +1,4 @@
+ANATOLY YAKOVENKO
+-----------------
+
+I am a software developer with over 10 years of experience working on embedded systems. I love digging into the details of a challenging problem. Over the past 3 years I designed and lead development of a brand new technology for co-processor commucation between ARM and DSP cores on Qualcomm MSMs, for which I received several patents.  We achieved a ten fold reduction in co-processor communication latency, which enabled never before possible uses of DSP, and enabled technologies that would simply not be possible without the DSPs performance and power effeciency.  I would be a great addition to any team trying to leverage all the computational resources available on a Qualcomm MSM, and I would love to continue my role as a lead, taking on big engineering challenges, especially pushing the power and performance limits on mobile processors.
