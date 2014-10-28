@@ -12,6 +12,7 @@ clean:
 %.html: %.md *.css Makefile
 	$(MARKDOWN) $< --output $@
 
-%.pdf: %.md *.css Makefile
-	$(MARKDOWN2) $< --output $@
+
+%.pdf: %.html *.css Makefile
+	export PATH=${PATH}:/Applications/wkhtmltopdf.app/Contents/MacOS && wkhtmltopdf $< $@
 
