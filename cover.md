@@ -8,8 +8,3 @@ I am a software developer with over 10 years of experience working on embedded s
 
 I would be an asset to any team trying to take full advantage of the computational resources available on Qualcomm mobile processors. I would love to continue my role as a lead, taking on exciting engineering challenges and pushing the power and performance limits of mobile processors. 
 
-I would be thrilled to work on optimizing hardware performance for the Oculus Rift. I will follow up with you next week, and you can reach me at aeyakovenko@gmail.com. I look forward to speaking with you.
-
-Thank you,
-
-Anatoly Yakovenko
