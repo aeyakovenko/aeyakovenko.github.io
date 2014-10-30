@@ -47,7 +47,7 @@ Software developer with over 10 years of experience in embedded operating system
    * Roaming protocol for 802.11a/b networks for NetBSD
 
 #### Personal Research
-   * Neural Networks, Genetic Algorithms, Markov Models, and Bayes Inference Algorithms
+   * Neural Networks, Genetic Algorithms, Markov Models, and Bayesian Inference Algorithms
 
 ### EDUCATION
 #### Bachelor of Science in Computer Science
