@@ -21,7 +21,7 @@ Software developer with over 10 years of experience in embedded operating system
 ##### Senior Engineer, 2006 - 2009
 ##### Engineer, 2003 - 2006
    * Heterogenous Multicore Compute
-   Lead development of a brand new technology featured in [Hexagon SDK] for of-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Developed several [patents], and ported to [Linux Kernel], Windows and Qnx.  Enabled 15x reduction in power consumption in select Compute Vision algorithms.
+   Lead development of a brand new technology featured in [Hexagon SDK] for off-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Developed several [patents], and ported to [Linux Kernel], Windows and Qnx.  Enabled 15x reduction in power consumption in select Compute Vision algorithms.
    * Mobile Operating Systems
    Lead development of Inter-Process Communication for BREW, Qualcomm's mobile operating systems.  Developed secure frameworks for 3rd party applications and developer tools for analyzing performance and use.  Developed a custom compiler for Interface Description Language achieving a 2x reduction in minimum memory requirements for the entire operating system.
    * QChat Push To Talk
