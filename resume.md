@@ -30,13 +30,13 @@ Software developer with over 10 years of experience in embedded operating system
 #### Alescere LLC, Lisle IL
 ##### Co-Founder, 2001 to 2003
    * Founding member of [Alescere], a VOIP startup
-   * SIP and [RTP] protocol stacks, and server components for a VoIP system for small businesses
+   * Lead development of SIP and [RTP] protocol stacks, and server components for a VoIP system for small businesses
 
 #### University of Illinois at Urbana-Champaign
 ##### Research Assistant, 2003
-   * Web server that supports QoS for HTTP requests
-   * Probabilistic scheduler for the Linux kernel
-   * Roaming protocol for 802.11a/b networks for NetBSD
+   * Developed a web server that supports QoS for HTTP requests
+   * Designed a probabilistic scheduler for the Linux kernel
+   * Implemented a roaming protocol for 802.11a/b networks for NetBSD
 
 #### Personal Research
    * Neural Networks, Genetic Algorithms, Markov Models, and Bayesian Inference Algorithms
