@@ -7,6 +7,8 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 
 Software developer with over 10 years of experience in embedded operating systems, developing [patents], leading projects and contributing to large groups including [Linux Kernel], with a focus on performance and optimization for Qualcomm ARM and DSP processors.
 
+I am a software developer with over 10 years of experience in embedded operating systems.  I am an expert at embedded operating systems, debugging, power and performance optimizations. I have lead complex software projects, collaborated with large teams including [Linux Kernel], and developed [patents].  I have a wide range of skills, from building scalable AWS RESTful servers, to implementing common subexpression elimination in a compiler.  I would be a great addition to any team looking for a talented software developer that can take on any task.
+
 ### SKILLS
 #### Hardware and Systems
   * Embedded Operating Systems, Linux Kernel, Android, Qualcomm MSMs, System MMUs, ARM, Hexagon DSP
