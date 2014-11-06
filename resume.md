@@ -20,21 +20,12 @@ Software developer with over 10 years of experience in embedded operating system
 ##### Staff Engineer, 2008 - 2012
 ##### Senior Engineer, 2006 - 2009
 ##### Engineer, 2003 - 2006
-   * Achieved 10x performance improvement in subsystem communication via FastRPC, a bridge between the DSP co-processor and ARM processor for high performance applications.  Ported to Windows, Qnx, Android [Linux Kernel].  Patents: [20140136817], [20140096148]
-   * 2.5x reduction in power porting ARM/Neon Image Processing algorithms to DSP
-   * IDL (Interface Description Language) compiler for [Hexagon SDK]
-   * Dynamic linker for loading dynamic processes on Qualcomm's embedded DSP OS
-   * Dynamic module framework for loading shared objects on DSP from the application processor
-   * Capability based application framework for BREW (Qualcomm's Mobile Operating System)
-   * Component Object Model IPC (Inter-Process Communication) implementation for BREW
-   * IDL compiler with C/C++/Lua backends for BREW IPC
-   * Elf manipulator with a DSL (Domain Specific Language) in Lua
-   * System call trace tool for BREW IPC with a Lua DSL.
-   * Build system plugins for unit testing and verifying code coverage
-   * Declarative full featured object library for C with C++ compatible v-tables, in less then 500 bytes of RO arm object code
-   * Prototype and test generation tool for rapid development of BREW components
-   * Network components using SIP/HTTP/RTP and proprietary standards for QChat push to talk service
-   * High performance logging tools to handle tens of thousands of transactions per second from many networked components
+   * Heterogenous Multicore Compute *
+   Lead development of a brand new technology featured in [Hexagon SDK] for of-loading computations between ARM and DSP co-processors on Qualcomm mobile chipsets.  Developed several [patents], and ported to [Linux Kernel], Windows and Qnx.  Enabled 15x reduction in power consumption in select Compute Vision algorithms.
+   * Mobile Operating Systems *
+   Lead development of Inter-Process Comunication for BREW, Qualcomms mobile operating systems.  Developed secure frameworks for 3rd applications and developer tools for analizing performance and use.
+   * QChat Push To Talk *
+   Developed network components using SIP/HTTP/RTP and proprietary standards for QChat push to talk service.  Designed high performance logging tools to handle tens of thousands of transactions per second from many networked components with a real time monitoring system.
 
 #### Alescere LLC, Lisle IL
 ##### Co-Founder, 2001 to 2003
