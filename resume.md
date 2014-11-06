@@ -21,11 +21,11 @@ Software developer with over 10 years of experience in embedded operating system
 ##### Senior Engineer, 2006 - 2009
 ##### Engineer, 2003 - 2006
    * Heterogenous Multicore Compute
-   Lead development of a brand new technology featured in [Hexagon SDK] for of-loading computations between ARM and DSP co-processors on Qualcomm mobile chipsets.  Developed several [patents], and ported to [Linux Kernel], Windows and Qnx.  Enabled 15x reduction in power consumption in select Compute Vision algorithms.
+   Lead development of a brand new technology featured in [Hexagon SDK] for of-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Developed several [patents], and ported to [Linux Kernel], Windows and Qnx.  Enabled 15x reduction in power consumption in select Compute Vision algorithms.
    * Mobile Operating Systems
-   Lead development of Inter-Process Comunication for BREW, Qualcomms mobile operating systems.  Developed secure frameworks for 3rd applications and developer tools for analizing performance and use.
+   Lead development of Inter-Process Communication for BREW, Qualcomm's mobile operating systems.  Developed secure frameworks for 3rd party applications and developer tools for analyzing performance and use.  Developed a custom compiler for Interface Description Language achieving a 2x reduction in minimum memory requirements for the entire operating system.
    * QChat Push To Talk
-   Developed network components using SIP/HTTP/RTP and proprietary standards for QChat push to talk service.  Designed high performance logging tools to handle tens of thousands of transactions per second from many networked components with a real time monitoring system.
+   Developed network components using SIP/HTTP/RTP and proprietary standards for QChat push to talk service.  Designed high performance logging tools to handle tens of thousands of transactions per second from many networked components with a real-time monitoring system.
 
 #### Alescere LLC, Lisle IL
 ##### Co-Founder, 2001 to 2003
