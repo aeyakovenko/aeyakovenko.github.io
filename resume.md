@@ -12,7 +12,7 @@ Software developer with over 10 years of experience in embedded operating system
   * Embedded Operating Systems, Linux Kernel, Android, Qualcomm MSMs, System MMUs, ARM, Hexagon DSP
 
 #### Languages and Tools
-  * C, C++, Haskell, Lua, Make, Python, Ruby, Git, Perforce, GDB, Trace32
+  * C, C++, Haskell, Lua, Make, Bash, Python, Ruby, Git, Perforce, GDB, Trace32
 
 ### WORK EXPERIENCE
 #### Qualcomm, San Diego CA
@@ -21,16 +21,20 @@ Software developer with over 10 years of experience in embedded operating system
 ##### Senior Engineer, 2006 - 2009
 ##### Engineer, 2003 - 2006
    * Heterogenous Multicore Compute
-   Lead development of a brand new technology featured in [Hexagon SDK] for off-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Developed several [patents], and ported to [Linux Kernel], Windows and Qnx.  Enabled 15x reduction in power consumption in select Compute Vision algorithms.
+   Lead developer of a brand new technology featured in [Hexagon SDK] for off-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Achieved a 10x reduction in co-processor communication latency.  Developed several [patents], and commercialized on Android, Windows and Qnx.  Enabled cutting edge Computer Vision, Augmented Reality, 3d camera technologies utilizing Qualcomm's DSP on numerous devices. 
    * Mobile Operating Systems
-   Lead development of Inter-Process Communication for BREW, Qualcomm's mobile operating systems.  Developed secure frameworks for 3rd party applications and developer tools for analyzing performance and use.  Developed a custom compiler for Interface Description Language achieving a 2x reduction in minimum memory requirements for the entire operating system.
+   Lead developer of Inter-Process Communication for BREW, Qualcomm's mobile operating systems - acapability based object oriented embedded operating system, shipped on thousands of devices, millions of units, with billion of 3rd party application downloads.  Developed developer frameworks, tools, and custom Interface Description Language compiler.  Lead interface reviews with a focus on binary backwards compatibility, security, and performance.
    * QChat Push To Talk
    Developed network components using SIP/HTTP/RTP and proprietary standards for QChat push to talk service.  Designed high performance logging tools to handle tens of thousands of transactions per second from many networked components with a real-time monitoring system.
 
 #### Alescere LLC, Lisle IL
 ##### Co-Founder, 2001 to 2003
    * Founding member of [Alescere], a VOIP startup
+<<<<<<< HEAD
    * Lead development of SIP and [RTP] protocol stacks, and server components for a VoIP system for small businesses
+=======
+   Lead development of SIP and [RTP] protocol stacks, and server components for a VoIP system for small businesses.
+>>>>>>> 038a80f105d090eaa97057e16341e0ab01110ea9
 
 #### University of Illinois at Urbana-Champaign
 ##### Research Assistant, 2003
@@ -40,6 +44,11 @@ Software developer with over 10 years of experience in embedded operating system
 
 #### Personal Research
    * Neural Networks, Genetic Algorithms, Markov Models, and Bayesian Inference Algorithms
+
+### References
+   * Brian Kelley <bkelley@quicinc.com>, Senior Director of Technology
+   * Rob Walker <rwalker@quicinc.com>, Senior Director of Engineering
+   * Ramesh Chandrasekhar <rameshc@qti.qualcomm.com>, Director of Engineering
 
 ### EDUCATION
 #### Bachelor of Science in Computer Science
