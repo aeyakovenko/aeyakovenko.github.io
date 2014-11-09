@@ -12,7 +12,7 @@ Software developer with over 10 years of experience in embedded operating system
   * Embedded Operating Systems, Linux Kernel, Android, Qualcomm MSMs, System MMUs, ARM, Hexagon DSP
 
 #### Languages and Tools
-  * C, C++, Haskell, Lua, Make, Python, Ruby, Git, Perforce, GDB, Trace32
+  * C, C++, Haskell, Lua, Make, Bash, Python, Ruby, Git, Perforce, GDB, Trace32
 
 ### WORK EXPERIENCE
 #### Qualcomm, San Diego CA
@@ -23,7 +23,7 @@ Software developer with over 10 years of experience in embedded operating system
    * Heterogenous Multicore Compute
    Lead developer of a brand new technology featured in [Hexagon SDK] for off-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Achieved a 10x reduction in co-processor communication latency.  Developed several [patents], and commercialized on Android, Windows and Qnx.  Enabled cutting edge Computer Vision, Augmented Reality, 3d camera technologies utilizing Qualcomm's DSP on numerous devices. 
    * Mobile Operating Systems
-   Lead developer of Inter-Process Communication for BREW, Qualcomm's mobile operating systems - acapability based object oriented embedded operating system, shipped on thousands of devices, millions of units, with billion of 3rd party application downloads.  Developed developer frameworks, tools, and custom Interface Description Language compiler.  Lead interface reviews with a focus on binary backwards compatibility, security, performance and developer ease of use.
+   Lead developer of Inter-Process Communication for BREW, Qualcomm's mobile operating systems - acapability based object oriented embedded operating system, shipped on thousands of devices, millions of units, with billion of 3rd party application downloads.  Developed developer frameworks, tools, and custom Interface Description Language compiler.  Lead interface reviews with a focus on binary backwards compatibility, security, and performance.
    * QChat Push To Talk
    Developed network components using SIP/HTTP/RTP and proprietary standards for QChat push to talk service.  Designed high performance logging tools to handle tens of thousands of transactions per second from many networked components with a real-time monitoring system.
 
@@ -42,9 +42,9 @@ Software developer with over 10 years of experience in embedded operating system
    * Neural Networks, Genetic Algorithms, Markov Models, and Bayesian Inference Algorithms
 
 ### References
-   * [Brian Kelley](mailto:bkelley@quicinc.com), Senior Director of Engineering
-   * [Rob Walker](mailto:rwalker@quicinc.com), Senior Director of Engineering
-   * [Ramesh Chandrasekhar](mailto:rameshc@qti.qualcomm.com), Director of Engineering
+   * Brian Kelley <bkelley@quicinc.com>, Senior Director of Technology
+   * Rob Walker <rwalker@quicinc.com>, Senior Director of Engineering
+   * Ramesh Chandrasekhar <rameshc@qti.qualcomm.com>, Director of Engineering
 
 ### EDUCATION
 #### Bachelor of Science in Computer Science
