@@ -42,9 +42,9 @@ Software developer with over 10 years of experience in embedded operating system
    * Neural Networks, Genetic Algorithms, Markov Models, and Bayesian Inference Algorithms
 
 ### References
-   * Brian Kelley <bkelley@quicinc.com>, Senior Director of Technology
-   * Rob Walker <rwalker@quicinc.com>, Senior Director of Engineering
-   * Ramesh Chandrasekhar <rameshc@qti.qualcomm.com>, Director of Engineering
+   * Brian Kelley, Senior Director of Technology, <bkelley@quicinc.com>
+   * Rob Walker, Senior Director of Engineering, <rwalker@quicinc.com>
+   * Ramesh Chandrasekhar, Director of Engineering, <rameshc@qti.qualcomm.com>
 
 ### EDUCATION
 #### Bachelor of Science in Computer Science
