@@ -13,5 +13,4 @@ I'd love the chance to interview with Magic Leap, and you can get in touch with 
 
 Thank you,
 Anatoly Yakovenko
-858 220 6902
 http://aeyakovenko.github.io/resume.html
