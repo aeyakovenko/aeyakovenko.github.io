@@ -21,11 +21,11 @@ Software developer with over 10 years of experience in embedded operating system
 ##### Senior Engineer, 2006 - 2009
 ##### Engineer, 2003 - 2006
    * Heterogenous Multicore Compute
-   Lead developer of a brand new technology featured in [Hexagon SDK] for off-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Achieved a 10x reduction in co-processor communication latency.  Developed several [patents], and commercialized on Android, Windows and Qnx.  Enabled cutting edge Computer Vision, Augmented Reality, 3d camera technologies utilizing Qualcomm's DSP on numerous devices. 
+   Lead development of FastRPC, a brand new technology featured in [Hexagon SDK] for off-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Achieved a 10x reduction in co-processor communication latency.  Developed several [patents], and commercialized on Android, Windows and Qnx.  Extensive hands-on experience developing and debugging multi-core systems.  Worked with internal and third party developers on power and performance optimizations on Computer Vision, Augmented Reality, and 3D Camera technologies utilizing Qualcomm's DSP.
    * Mobile Operating Systems
-   Lead developer of Inter-Process Communication for BREW, Qualcomm's mobile operating systems - a capability based object oriented embedded operating system, shipped on thousands of devices, millions of units, with billion of 3rd party application downloads.  Developed developer frameworks, tools, and custom Interface Description Language compiler.  Lead interface reviews with a focus on binary backwards compatibility, security, and performance.
+   Lead development of Inter-Process Communication for BREW, Qualcomm's mobile operating system - shipped on thousands of devices, and millions of units.  Additionally developed frameworks, tools, and custom Interface Description Language compiler.  Designed critical pieces of the kernel.  Lead interface reviews with a focus on binary backwards compatibility, security, and performance.
    * QChat Push To Talk
-   Developed network components using SIP/HTTP/RTP and proprietary standards for QChat push to talk service.  Designed high performance logging tools to handle tens of thousands of transactions per second from many networked components with a real-time monitoring system.
+   Developed network components using SIP/HTTP/RTP and proprietary standards for QChat Push To Talk service.  Designed high performance logging tools to handle tens of thousands of transactions per second from many networked components with a real-time monitoring system.
 
 #### Alescere LLC, Lisle IL
 ##### Co-Founder, 2001 to 2003
