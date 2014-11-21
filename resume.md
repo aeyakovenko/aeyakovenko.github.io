@@ -9,10 +9,10 @@ Software developer with over 10 years of experience in embedded operating system
 
 ### SKILLS
 #### Hardware and Systems
-  * Embedded Operating Systems, Linux Kernel, Android, Qualcomm MSMs, System MMUs, ARM, Hexagon DSP
+  * Embedded Operating Systems, RTOS, Linux Kernel, Android, Qualcomm MSMs, System MMUs, ARM, Hexagon DSP
 
 #### Languages and Tools
-  * C, C++, Haskell, Lua, Make, Bash, Python, Ruby, Git, Perforce, GDB, Trace32
+  * C, C++, Haskell, Lua, Make, Bash, Python, Ruby, Git, Perforce, GDB, JTAG, Trace32
 
 ### WORK EXPERIENCE
 #### Qualcomm, San Diego CA
@@ -20,17 +20,17 @@ Software developer with over 10 years of experience in embedded operating system
 ##### Staff Engineer, 2008 - 2012
 ##### Senior Engineer, 2006 - 2009
 ##### Engineer, 2003 - 2006
-   * Heterogenous Multicore Compute
-   Lead development of FastRPC, a brand new technology featured in [Hexagon SDK] for off-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Achieved a 10x reduction in co-processor communication latency.  Developed several [patents], and commercialized on modern Android, Windows and Qnx devices.  Extensive experience developing and debugging multi-core systems. Hands-on experience optimizing performance and power of Computer Vision, Augmented Reality, 3d camera technologies utilizing Qualcomm's DSP.
+   * Heterogeneous Multicore Compute
+   Lead development of FastRPC, a brand new technology featured in [Hexagon SDK] for off-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Achieved a 10x reduction in co-processor communication latency.  Designed and developed [Linux Kernel], Qnx and Qurt RTOS drivers. Developed several [patents], and commercialized on modern Android, Windows and Qnx devices.  Worked with internal and third party developers on performance and power optimizations of Computer Vision, Augmented Reality, and 3D Camera technologies utilizing Qualcomm's DSP.
    * Mobile Operating Systems
-   Lead developer of Inter-Process Communication for BREW, Qualcomm's mobile operating system - shipped on thousands of devices and millions of units. Additionally developed frameworks, test driven development tools, and custom Interface Description Language compiler.  Designed critical kernel components.  Lead interface reviews with a focus on binary backwards compatibility, security, and performance.
+   Lead developer of Inter-Process Communication for BREW, Qualcomm's mobile operating system - shipped on thousands of devices and millions of units.  Built commercial quality developer tools such as custom IDL compilers, mock object generators, elf parsers, and system call trace tools. Wrote unit test coverage frameworks with an exception simulator, achieving 100% code coverage in critical pieces of the kernel. Lead interface and code reviews, enforcing strict requirements for API binary backwards compatibility, performance, and application and kernel security.
    * QChat Push To Talk
    Developed network components using SIP/HTTP/RTP and proprietary standards for QChat Push To Talk service.  Designed high performance logging tools to handle tens of thousands of transactions per second from many networked components with a real-time monitoring system.
 
 #### Alescere LLC, Lisle IL
 ##### Co-Founder, 2001 to 2003
    * Founding member of [Alescere], a VOIP startup
-   Lead development of SIP and [RTP] protocol stacks, and server components for a VoIP system for small businesses.
+   Lead development of SIP and [RTP] protocol stacks and server components for a VoIP system for small businesses.
 
 #### University of Illinois at Urbana-Champaign
 ##### Research Assistant, 2003
