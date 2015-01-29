@@ -22,12 +22,7 @@ int main() {
    printf("%p\n", &wtf);   //linker error
    return 0;
 }
-
-#pragma GCC system_header
 ```
-
-works great for generated code.
-
 
 disable warnings in gcc
 -----------------------
