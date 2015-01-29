@@ -1,6 +1,34 @@
 notes
 =====
 
+wtf C!
+-----------------------
+
+
+```C
+#include <stdio.h>
+#include <string.h>
+
+#define C_ASSERT(test) \
+    switch(0) {\
+      case 0:\
+      case test:;\
+    }
+
+int main() {
+   void (wtf)(void);
+   C_ASSERT(sizeof(wtf) == 1);
+   //wtf = 0;              //unasignable type error
+   printf("%p\n", &wtf);   //linker error
+   return 0;
+}
+
+#pragma GCC system_header
+```
+
+works great for generated code.
+
+
 disable warnings in gcc
 -----------------------
 

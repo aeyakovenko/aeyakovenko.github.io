@@ -29,6 +29,26 @@ code > span.er { color: #ff0000; font-weight: bold; }
 </head>
 <body>
 <h1 id="notes">notes</h1>
+<h2 id="wtf-c">wtf C!</h2>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#include &lt;stdio.h&gt;</span>
+<span class="ot">#include &lt;string.h&gt;</span>
+
+<span class="ot">#define C_ASSERT(test) \</span>
+    <span class="kw">switch</span>(<span class="dv">0</span>) {\
+      <span class="kw">case</span> <span class="dv">0</span>:\
+      <span class="kw">case</span> test:;\
+    }
+
+<span class="dt">int</span> main() {
+   <span class="dt">void</span> (wtf)(<span class="dt">void</span>);
+   C_ASSERT(<span class="kw">sizeof</span>(wtf) == <span class="dv">1</span>);
+   <span class="co">//wtf = 0;              //unasignable type error</span>
+   printf(<span class="st">&quot;%p</span><span class="ch">\n</span><span class="st">&quot;</span>, &amp;wtf);   <span class="co">//linker error</span>
+   <span class="kw">return</span> <span class="dv">0</span>;
+}
+
+<span class="ot">#pragma GCC system_header</span></code></pre>
+<p>works great for generated code.</p>
 <h2 id="disable-warnings-in-gcc">disable warnings in gcc</h2>
 <pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#pragma GCC system_header</span></code></pre>
 <p>works great for generated code.</p>
