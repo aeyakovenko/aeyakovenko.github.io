@@ -1,5 +1,7 @@
-notes
-=====
+ANATOLY YAKOVENKO
+-----------------
+
+aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [LinkedIn](https://www.linkedin.com/profile/view?id=312504086) | [resume](http://aeyakovenko.github.io/resume.html)
 
 wtf C!
 -----------------------
@@ -22,6 +24,12 @@ int main() {
    printf("%p\n", &wtf);   //linker error
    return 0;
 }
+```
+
+So the reason a function has a size even though its unasignable is so we can do arithmetic on function pointers.
+
+```C
+   assert(main+1 == ((char*)main)+1);
 ```
 
 disable warnings in gcc

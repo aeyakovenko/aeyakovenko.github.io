@@ -1,8 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<header>
-   <nav>
-   <a href="README.html">notes</a> |
-   <a href="resume.html">resume</a>
-  </nav>
-</header>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="github.css" type="text/css" />
+</head>
+<body>
+<h2 id="anatoly-yakovenko">ANATOLY YAKOVENKO</h2>
+<p><script type="text/javascript">
+<!--
+h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x61;&#x65;&#x79;&#x61;&#x6b;&#x6f;&#118;&#x65;&#110;&#x6b;&#x6f;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x61;&#x65;&#x79;&#x61;&#x6b;&#x6f;&#118;&#x65;&#110;&#x6b;&#x6f;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript> | <a href="https://github.com/aeyakovenko">GitHub</a> | <a href="https://www.linkedin.com/profile/view?id=312504086">LinkedIn</a> | <a href="http://aeyakovenko.github.io/resume.html">resume</a></p>
+<h2 id="wtf-c">wtf C!</h2>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#include &lt;stdio.h&gt;</span>
+<span class="ot">#include &lt;string.h&gt;</span>
+
+<span class="ot">#define C_ASSERT(test) \</span>
+    <span class="kw">switch</span>(<span class="dv">0</span>) {\
+      <span class="kw">case</span> <span class="dv">0</span>:\
+      <span class="kw">case</span> test:;\
+    }
+
+<span class="dt">int</span> main() {
+   <span class="dt">void</span> (wtf)(<span class="dt">void</span>);
+   C_ASSERT(<span class="kw">sizeof</span>(wtf) == <span class="dv">1</span>);
+   <span class="co">//wtf = 0;              //unasignable type error</span>
+   printf(<span class="st">&quot;%p</span><span class="ch">\n</span><span class="st">&quot;</span>, &amp;wtf);   <span class="co">//linker error</span>
+   <span class="kw">return</span> <span class="dv">0</span>;
+}</code></pre>
+<p>So the reason a function has a size even though its unasignable is so we can do arithmetic on function pointers.</p>
+<pre class="sourceCode c"><code class="sourceCode c">   assert(main<span class="dv">+1</span> == ((<span class="dt">char</span>*)main)+<span class="dv">1</span>);</code></pre>
+<h2 id="disable-warnings-in-gcc">disable warnings in gcc</h2>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#pragma GCC system_header</span></code></pre>
+<p>works great for generated code.</p>
+<h2 id="cgdb-highlight-current-line">cgdb, highlight current line</h2>
+<pre class="viml"><code>:hi SelectedLineNr cterm=reverse</code></pre>
+<h2 id="printing-all-the-gcc-defines">printing all the gcc defines</h2>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">gcc</span> -dM -E - <span class="kw">&lt;</span> /dev/null</code></pre>
+<h2 id="foldr-map-and-curry-in-the-c-preprocessor-language">foldr map and curry in the C preprocessor language</h2>
+<p>Might as well do scheme next :).</p>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="co">//compile assert macro</span>
+<span class="ot">#define C_ASSERT(test) \</span>
+    <span class="kw">switch</span>(<span class="dv">0</span>) {\
+      <span class="kw">case</span> <span class="dv">0</span>:\
+      <span class="kw">case</span> test:;\
+    }
+<span class="co">// ... means any number of arguments a1 -&gt; a2 -&gt; a3 ... -&gt; an</span>
+<span class="co">// so (...) is (a1 -&gt; a2 -&gt; a3 ... -&gt; an) or a list</span>
+<span class="co">// but i will use haskells [a] types to express lists</span>
+<span class="co">// where lists are expected explicitly</span>
+
+<span class="co">//count arguments</span>
+<span class="co">//COUNT_ARGS :: ... -&gt; Int</span>
+<span class="ot">#define COUNT_ARGS(...) COUNT_ARGS_(,##__VA_ARGS__,6,5,4,3,2,1,0)</span>
+<span class="ot">#define COUNT_ARGS_(z,a,b,c,d,e,f,cnt,...) cnt</span>
+
+<span class="co">//call an object</span>
+<span class="co">//CALL :: (... -&gt; a) -&gt; (...) -&gt; a</span>
+<span class="ot">#define CALL(x,y) x y</span>
+
+<span class="co">//HEAD :: [a] -&gt; a</span>
+<span class="ot">#define HEAD(args) CALL(HEAD_,args)</span>
+<span class="ot">#define HEAD_(a,...) a</span>
+
+<span class="co">//TAIL :: [a] -&gt; [a]</span>
+<span class="ot">#define TAIL(args) (CALL(TAIL_,args))</span>
+<span class="ot">#define TAIL_(a,...) __VA_ARGS__</span>
+
+<span class="co">//UNPACK :: (...) -&gt; ...</span>
+<span class="ot">#define UNPACK(args) CALL(UNPACK_,args)</span>
+<span class="ot">#define UNPACK_(...) __VA_ARGS__</span>
+
+<span class="ot">#define ISEMPTY(ls) PASTE(ISEMPTY_,CALL_(COUNT_ARGS,PASTE(ISEMPTY_,CALL(COUNT_ARGS,ls))))</span>
+<span class="ot">#define CALL_(f,a) f(a) </span>
+<span class="ot">#define ISEMPTY_0 a,b</span>
+<span class="ot">#define ISEMPTY_2 1</span>
+<span class="ot">#define ISEMPTY_1 0</span>
+
+<span class="co">//JOIN :: (...) -&gt; (...) -&gt; (...)</span>
+<span class="ot">#define JOIN(l1,l2) PASTE(JOIN_,PASTE(ISEMPTY(l1),ISEMPTY(l2)))(l1,l2)</span>
+<span class="ot">#define JOIN_00(l1,l2) (UNPACK(l1),UNPACK(l2))</span>
+<span class="ot">#define JOIN_10(l1,l2) l2</span>
+<span class="ot">#define JOIN_01(l1,l2) l1</span>
+<span class="ot">#define JOIN_11(l1,l2) ()</span>
+
+<span class="co">//curry a function to it arguments</span>
+<span class="ot">#define CURRY(f,args) JOIN(f,args)</span>
+
+<span class="co">//evaluate a function object</span>
+<span class="ot">#define EVAL(f) EVAL_ f </span>
+<span class="ot">#define EVAL_(f,...) f(__VA_ARGS__)</span>
+
+
+<span class="co">//PASTE :: a -&gt; b -&gt; c</span>
+<span class="co">//this is really in the preprocessor domain, so hard to type</span>
+<span class="ot">#define PASTE(aa,bb) PASTE_(aa,bb)</span>
+<span class="ot">#define PASTE_(aa,bb) aa ## bb</span>
+
+
+<span class="co">//FOLDR :: (a -&gt; b -&gt; b) -&gt; b -&gt; [a] -&gt; b</span>
+<span class="ot">#define FOLDR(func,accum,lst)       PASTE(FOLDR_,CALL(COUNT_ARGS,lst))(func,accum,lst)</span>
+<span class="ot">#define FOLDR_1(func,accum,lst)     EVAL_FR(CURRY(func,(HEAD(lst), accum)))</span>
+<span class="ot">#define FOLDR_2(func,accum,lst)     EVAL_FR(CURRY(func,(HEAD(lst),FOLDR_1(func,accum,TAIL(lst)))))</span>
+<span class="ot">#define FOLDR_3(func,accum,lst)     EVAL_FR(CURRY(func,(HEAD(lst),FOLDR_2(func,accum,TAIL(lst)))))</span>
+<span class="ot">#define FOLDR_4(func,accum,lst)     EVAL_FR(CURRY(func,(HEAD(lst),FOLDR_3(func,accum,TAIL(lst)))))</span>
+
+<span class="co">//the map needs a different eval then the foldr</span>
+<span class="co">//i dont fully grok this part yet</span>
+<span class="ot">#define EVAL_FR(f) EVAL_FR_ f </span>
+<span class="ot">#define EVAL_FR_(f,...) f(__VA_ARGS__)</span>
+
+<span class="co">//MAP :: (a -&gt; b) -&gt; [a] -&gt; b</span>
+<span class="ot">#define MAP(func,lst)  FOLDR((MAP_,func),(),lst)</span>
+<span class="ot">#define MAP_(func,aa,acc)  JOIN((EVAL_MP(CURRY(func,(aa)))), acc)</span>
+<span class="ot">#define EVAL_MP(f) EVAL_MP_ f </span>
+<span class="ot">#define EVAL_MP_(f,...) f(__VA_ARGS__)</span>
+
+<span class="dt">int</span> main(<span class="dt">void</span>) {
+   C_ASSERT(<span class="dv">0</span> == COUNT_ARGS());
+   C_ASSERT(<span class="dv">1</span> == COUNT_ARGS(<span class="dv">1</span>));
+   C_ASSERT(<span class="dv">2</span> == COUNT_ARGS(<span class="dv">1</span>,<span class="dv">2</span>));
+   C_ASSERT(<span class="dv">3</span> == COUNT_ARGS(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>));
+
+   C_ASSERT(<span class="dv">12</span> == PASTE(<span class="dv">1</span>,<span class="dv">2</span>));
+
+   C_ASSERT(<span class="dv">1</span> == HEAD((<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)));
+   C_ASSERT(<span class="dv">2</span> == HEAD(TAIL((<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>))));
+   C_ASSERT(<span class="dv">3</span> == HEAD(TAIL(TAIL((<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)))))
+
+   C_ASSERT(<span class="dv">1</span> == ISEMPTY(()))
+   C_ASSERT(<span class="dv">0</span> == ISEMPTY((<span class="dv">1</span>)))
+   C_ASSERT(<span class="dv">0</span> == ISEMPTY((<span class="dv">1</span>,<span class="dv">2</span>)))
+   C_ASSERT(<span class="dv">0</span> == ISEMPTY((<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)))
+   C_ASSERT(<span class="dv">1</span> == ISEMPTY(JOIN((),())))
+
+   C_ASSERT(<span class="dv">1</span> == HEAD(JOIN((),(<span class="dv">1</span>))))
+   C_ASSERT(<span class="dv">1</span> == HEAD(JOIN((<span class="dv">1</span>),())))
+   C_ASSERT(<span class="dv">1</span> == HEAD(JOIN((<span class="dv">1</span>,<span class="dv">2</span>),())))
+   C_ASSERT(<span class="dv">1</span> == HEAD(JOIN((<span class="dv">1</span>),(<span class="dv">2</span>))))
+   C_ASSERT(<span class="dv">2</span> == HEAD(JOIN((<span class="dv">2</span>),(<span class="dv">1</span>))))
+   C_ASSERT(<span class="dv">1</span> == HEAD(JOIN((<span class="dv">1</span>,<span class="dv">2</span>),(<span class="dv">3</span>,<span class="dv">4</span>))))
+   C_ASSERT(<span class="dv">2</span> == HEAD(TAIL(JOIN((<span class="dv">1</span>,<span class="dv">2</span>),(<span class="dv">3</span>,<span class="dv">4</span>)))))
+   C_ASSERT(<span class="dv">3</span> == HEAD(TAIL(TAIL(JOIN((<span class="dv">1</span>,<span class="dv">2</span>),(<span class="dv">3</span>,<span class="dv">4</span>))))))
+   C_ASSERT(<span class="dv">4</span> == HEAD(TAIL(TAIL(TAIL(JOIN((<span class="dv">1</span>,<span class="dv">2</span>),(<span class="dv">3</span>,<span class="dv">4</span>)))))))
+
+   C_ASSERT(<span class="dv">1</span> == EVAL(CURRY((HEAD),((<span class="dv">1</span>,<span class="dv">2</span>)))))
+   C_ASSERT(<span class="dv">12</span> == EVAL(CURRY((PASTE),(<span class="dv">1</span>,<span class="dv">2</span>))))
+   C_ASSERT(<span class="dv">12</span> == EVAL(CURRY((PASTE,<span class="dv">1</span>),(<span class="dv">2</span>))))
+
+   C_ASSERT(<span class="dv">123</span> == FOLDR((PASTE),,(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)))
+
+   <span class="ot">#define ID(x) x</span>
+   C_ASSERT(<span class="dv">1</span> == HEAD(MAP((ID),(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>))))
+   C_ASSERT(<span class="dv">1</span> == HEAD(MAP((ID),MAP((ID),(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)))))
+   C_ASSERT(<span class="dv">1</span> == HEAD(MAP((ID),MAP((ID),MAP((ID),(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>))))))
+
+
+   <span class="kw">return</span> <span class="dv">0</span>;
+}</code></pre>
+<h2 id="counting-args-with-c-macros">counting args with C macros</h2>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="co">/**</span>
+<span class="co"> * we need a comma at the start for ##_VA_ARGS__ to consume then</span>
+<span class="co"> * the arguments are pushed out in such a way that &#39;cnt&#39; ends up with</span>
+<span class="co"> * the right count.  </span>
+<span class="co"> */</span>
+<span class="ot">#define COUNT_ARGS(...) COUNT_ARGS_(,##__VA_ARGS__,6,5,4,3,2,1,0)</span>
+<span class="ot">#define COUNT_ARGS_(z,a,b,c,d,e,f,cnt,...) cnt</span>
+
+<span class="ot">#define C_ASSERT(test) \</span>
+    <span class="kw">switch</span>(<span class="dv">0</span>) {\
+      <span class="kw">case</span> <span class="dv">0</span>:\
+      <span class="kw">case</span> test:;\
+    }
+
+<span class="dt">int</span> main() {
+   C_ASSERT(<span class="dv">0</span> ==  COUNT_ARGS());
+   C_ASSERT(<span class="dv">1</span> ==  COUNT_ARGS(a));
+   C_ASSERT(<span class="dv">2</span> ==  COUNT_ARGS(a,b));
+   C_ASSERT(<span class="dv">3</span> ==  COUNT_ARGS(a,b,c));
+   C_ASSERT(<span class="dv">4</span> ==  COUNT_ARGS(a,b,c,d));
+   C_ASSERT(<span class="dv">5</span> ==  COUNT_ARGS(a,b,c,d,e));
+   C_ASSERT(<span class="dv">6</span> ==  COUNT_ARGS(a,b,c,d,e,f));
+   <span class="kw">return</span> <span class="dv">0</span>;
+}</code></pre>
+<h2 id="compile-time-assert">compile time assert</h2>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#define C_ASSERT(test) \</span>
+    <span class="kw">switch</span>(<span class="dv">0</span>) {\
+      <span class="kw">case</span> <span class="dv">0</span>:\
+      <span class="kw">case</span> test:;\
+    }</code></pre>
+<h2 id="make-repl-sort-of">make repl, sort of</h2>
+<pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#run make &#39;$(expression)&#39; to see what make thinks the expression evaluates to from your rules</span>
+<span class="dv">$$%:</span><span class="dt">;@</span><span class="ch">$(</span><span class="kw">call</span><span class="st"> true</span><span class="ch">)$(</span><span class="kw">info</span><span class="st"> </span><span class="ch">$(</span><span class="kw">call</span><span class="st"> or</span><span class="kw">,</span><span class="ch">$$$*))</span></code></pre>
+<h2 id="make-cabal">make + cabal</h2>
+<pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#run make T=target to trigger the build for target exe</span>
+<span class="dt">O</span><span class="ch">=</span><span class="st">dist/build</span>
+<span class="dt">D</span><span class="ch">=</span><span class="st">dist/setup-config</span>
+<span class="dt">A</span><span class="ch">=</span><span class="st">#</span>
+
+<span class="kw">ifneq</span> (<span class="ch">$(</span><span class="kw">strip</span><span class="st"> </span><span class="ch">$T)</span>,)
+<span class="dt">A</span><span class="ch">=$O</span><span class="st">/</span><span class="ch">$T</span><span class="st">/</span><span class="ch">$T</span>
+<span class="kw">endif</span>
+
+<span class="dv">all:</span><span class="ch">$A</span>
+
+<span class="dv">$O/%:</span><span class="ch">$(</span><span class="kw">shell</span><span class="st"> find . -not -path &quot;*dist/build/*&quot; -iname &quot;*.hs&quot;</span><span class="ch">)</span><span class="dt"> </span><span class="ch">$D</span>
+    cabal build
+    touch <span class="ch">$@</span>
+
+<span class="dv">clean:</span>
+    cabal clean
+
+<span class="dv">$D:</span><span class="ch">$(</span><span class="kw">wildcard</span><span class="st"> *.cabal</span><span class="ch">)</span>
+    cabal install --only-dependencies --enable-executable-profiling --enable-library-profiling
+    cabal configure
+    touch <span class="ch">$@</span></code></pre>
+<h2 id="vimrc">.vimrc</h2>
+<pre class="viml"><code>&quot;remembering cursor position between sessions
+:set viminfo=&#39;10,\&quot;100,:20,%,n~/.viminfo
+      
+function! ResCur()
+  if line(&quot;&#39;\&quot;&quot;) &lt;= line(&quot;$&quot;)
+    normal! g`&quot;
+    return 1
+  endif
+endfunction
+      
+augroup resCur
+  autocmd!
+  autocmd BufWinEnter * call ResCur()
+augroup END
+
+:syntax on
+:set nowrapscan
+:set autoindent
+:set expandtab
+:set tabstop=3
+:set ruler
+:set shiftwidth=3
+:set ignorecase
+:set smartcase
+:set tags=./tags;
+:set noswapfile
+:map &lt;tab&gt; &lt;C-w&gt;&lt;C-w&gt;
+:set wildmode=longest,list,full
+:set wildmenu
+&quot;underline spell check
+:hi clear SpellBad
+:hi SpellBad cterm=underline
+&quot;sane highlights for vimdiff
+highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
+highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
+highlight DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
+highlight DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
+
+&quot;use tabs in linux kernel code
+:au BufNewFile,BufRead /*kernel* set tabstop=8
+:au BufNewFile,BufRead /*kernel* set shiftwidth=8
+:au BufNewFile,BufRead /*kernel* set noexpandtab</code></pre>
+</body>
 </html>
