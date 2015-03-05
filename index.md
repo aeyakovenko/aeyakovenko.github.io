@@ -255,7 +255,6 @@ dist/cabal.build.ok:$(hs_files) dist/setup-config
 	@touch $@
 
 clean:
-	rm -f perf-list-RBM.tix
 	cabal clean
 
 dist/setup-config:$(cabal_files) Makefile
