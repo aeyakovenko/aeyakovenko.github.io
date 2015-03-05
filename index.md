@@ -235,28 +235,35 @@ make + cabal
 ------------
 
 ```Makefile
-#run make T=target to trigger the build for target exe
-O=dist/build
-D=dist/setup-config
-A=#
+#list of haskell sources
+hs_files=RBM/List.hs
+#list of cabal files
+cabal_files=rbm.cabal
 
-ifneq ($(strip $T),)
-A=$O/$T/$T
-endif
+all:dist/cabal.test.ok dist/cabal.perf.ok dist/cabal.build.ok
 
-all:$A
+dist/cabal.perf.ok:$(hs_files) dist/setup-config
+	cabal bench 2>&1
+	@touch $@
 
-$O/%:$(shell find . -not -path "*dist/build/*" -iname "*.hs") $D
-	cabal build
-	touch $@
+dist/cabal.test.ok:$(hs_files) dist/setup-config
+	cabal test 2>&1
+	@touch $@
+
+dist/cabal.build.ok:$(hs_files) dist/setup-config
+	cabal build 2>&1
+	@touch $@
 
 clean:
+	rm -f perf-list-RBM.tix
 	cabal clean
 
-$D:$(wildcard *.cabal)
-	cabal install --only-dependencies --enable-executable-profiling --enable-library-profiling
-	cabal configure
-	touch $@
+dist/setup-config:$(cabal_files) Makefile
+	cabal install --only-dependencies
+	cabal configure --enable-tests --enable-coverage --enable-library-profiling
+	@touch $@
+
+$$%:;@$(call true)$(info $(call or,$$$*))
 ```
 
 .vimrc

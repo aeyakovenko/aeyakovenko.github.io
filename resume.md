@@ -16,7 +16,8 @@ Software developer with over 10 years of experience in embedded operating system
 
 ### WORK EXPERIENCE
 #### Qualcomm, San Diego CA
-##### Senior Staff Engineer, 2012 to Present
+##### Senior Staff Engineer Manager, 2015 to Present
+##### Senior Staff Engineer, 2012 to 2015
 ##### Staff Engineer, 2008 - 2012
 ##### Senior Engineer, 2006 - 2009
 ##### Engineer, 2003 - 2006
