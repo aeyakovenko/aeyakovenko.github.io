@@ -40,10 +40,10 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <span class="ot">#include &lt;string.h&gt;</span>
 
 <span class="ot">#define C_ASSERT(test) \</span>
-    <span class="kw">switch</span>(<span class="dv">0</span>) {\
-      <span class="kw">case</span> <span class="dv">0</span>:\
-      <span class="kw">case</span> test:;\
-    }
+<span class="ot">    switch(0) {\</span>
+<span class="ot">      case 0:\</span>
+<span class="ot">      case test:;\</span>
+<span class="ot">    }</span>
 
 <span class="dt">int</span> main() {
    <span class="dt">void</span> (wtf)(<span class="dt">void</span>);
@@ -65,10 +65,10 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <p>Might as well do scheme next :).</p>
 <pre class="sourceCode c"><code class="sourceCode c"><span class="co">//compile assert macro</span>
 <span class="ot">#define C_ASSERT(test) \</span>
-    <span class="kw">switch</span>(<span class="dv">0</span>) {\
-      <span class="kw">case</span> <span class="dv">0</span>:\
-      <span class="kw">case</span> test:;\
-    }
+<span class="ot">    switch(0) {\</span>
+<span class="ot">      case 0:\</span>
+<span class="ot">      case test:;\</span>
+<span class="ot">    }</span>
 <span class="co">// ... means any number of arguments a1 -&gt; a2 -&gt; a3 ... -&gt; an</span>
 <span class="co">// so (...) is (a1 -&gt; a2 -&gt; a3 ... -&gt; an) or a list</span>
 <span class="co">// but i will use haskells [a] types to express lists</span>
@@ -192,10 +192,10 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <span class="ot">#define COUNT_ARGS_(z,a,b,c,d,e,f,cnt,...) cnt</span>
 
 <span class="ot">#define C_ASSERT(test) \</span>
-    <span class="kw">switch</span>(<span class="dv">0</span>) {\
-      <span class="kw">case</span> <span class="dv">0</span>:\
-      <span class="kw">case</span> test:;\
-    }
+<span class="ot">    switch(0) {\</span>
+<span class="ot">      case 0:\</span>
+<span class="ot">      case test:;\</span>
+<span class="ot">    }</span>
 
 <span class="dt">int</span> main() {
    C_ASSERT(<span class="dv">0</span> ==  COUNT_ARGS());
@@ -209,36 +209,43 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 }</code></pre>
 <h2 id="compile-time-assert">compile time assert</h2>
 <pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#define C_ASSERT(test) \</span>
-    <span class="kw">switch</span>(<span class="dv">0</span>) {\
-      <span class="kw">case</span> <span class="dv">0</span>:\
-      <span class="kw">case</span> test:;\
-    }</code></pre>
+<span class="ot">    switch(0) {\</span>
+<span class="ot">      case 0:\</span>
+<span class="ot">      case test:;\</span>
+<span class="ot">    }</span></code></pre>
 <h2 id="make-repl-sort-of">make repl, sort of</h2>
 <pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#run make &#39;$(expression)&#39; to see what make thinks the expression evaluates to from your rules</span>
 <span class="dv">$$%:</span><span class="dt">;@</span><span class="ch">$(</span><span class="kw">call</span><span class="st"> true</span><span class="ch">)$(</span><span class="kw">info</span><span class="st"> </span><span class="ch">$(</span><span class="kw">call</span><span class="st"> or</span><span class="kw">,</span><span class="ch">$$$*))</span></code></pre>
 <h2 id="make-cabal">make + cabal</h2>
-<pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#run make T=target to trigger the build for target exe</span>
-<span class="dt">O</span><span class="ch">=</span><span class="st">dist/build</span>
-<span class="dt">D</span><span class="ch">=</span><span class="st">dist/setup-config</span>
-<span class="dt">A</span><span class="ch">=</span><span class="st">#</span>
+<pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#list of haskell sources</span>
+<span class="dt">hs_files</span><span class="ch">=</span><span class="st">RBM/List.hs</span>
+<span class="co">#list of cabal files</span>
+<span class="dt">cabal_files</span><span class="ch">=</span><span class="st">rbm.cabal</span>
 
-<span class="kw">ifneq</span> (<span class="ch">$(</span><span class="kw">strip</span><span class="st"> </span><span class="ch">$T)</span>,)
-<span class="dt">A</span><span class="ch">=$O</span><span class="st">/</span><span class="ch">$T</span><span class="st">/</span><span class="ch">$T</span>
-<span class="kw">endif</span>
+<span class="dv">all:</span><span class="dt">dist/cabal.test.ok dist/cabal.perf.ok dist/cabal.build.ok</span>
 
-<span class="dv">all:</span><span class="ch">$A</span>
+<span class="dv">dist/cabal.perf.ok:</span><span class="ch">$(</span><span class="dt">hs_files</span><span class="ch">)</span><span class="dt"> dist/setup-config</span>
+    cabal bench 2&gt;&amp;1
+    <span class="ch">@</span><span class="fu">touch </span><span class="ch">$@</span>
 
-<span class="dv">$O/%:</span><span class="ch">$(</span><span class="kw">shell</span><span class="st"> find . -not -path &quot;*dist/build/*&quot; -iname &quot;*.hs&quot;</span><span class="ch">)</span><span class="dt"> </span><span class="ch">$D</span>
-    cabal build
-    touch <span class="ch">$@</span>
+<span class="dv">dist/cabal.test.ok:</span><span class="ch">$(</span><span class="dt">hs_files</span><span class="ch">)</span><span class="dt"> dist/setup-config</span>
+    cabal test 2&gt;&amp;1
+    <span class="ch">@</span><span class="fu">touch </span><span class="ch">$@</span>
+
+<span class="dv">dist/cabal.build.ok:</span><span class="ch">$(</span><span class="dt">hs_files</span><span class="ch">)</span><span class="dt"> dist/setup-config</span>
+    cabal build 2&gt;&amp;1
+    <span class="ch">@</span><span class="fu">touch </span><span class="ch">$@</span>
 
 <span class="dv">clean:</span>
+    rm -f perf-list-RBM.tix
     cabal clean
 
-<span class="dv">$D:</span><span class="ch">$(</span><span class="kw">wildcard</span><span class="st"> *.cabal</span><span class="ch">)</span>
-    cabal install --only-dependencies --enable-executable-profiling --enable-library-profiling
-    cabal configure
-    touch <span class="ch">$@</span></code></pre>
+<span class="dv">dist/setup-config:</span><span class="ch">$(</span><span class="dt">cabal_files</span><span class="ch">)</span><span class="dt"> Makefile</span>
+    cabal install --only-dependencies
+    cabal configure --enable-tests --enable-coverage --enable-library-profiling
+    <span class="ch">@</span><span class="fu">touch </span><span class="ch">$@</span>
+
+<span class="dv">$$%:</span><span class="dt">;@</span><span class="ch">$(</span><span class="kw">call</span><span class="st"> true</span><span class="ch">)$(</span><span class="kw">info</span><span class="st"> </span><span class="ch">$(</span><span class="kw">call</span><span class="st"> or</span><span class="kw">,</span><span class="ch">$$$*))</span></code></pre>
 <h2 id="vimrc">.vimrc</h2>
 <pre class="viml"><code>&quot;remembering cursor position between sessions
 :set viminfo=&#39;10,\&quot;100,:20,%,n~/.viminfo
