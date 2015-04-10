@@ -35,6 +35,13 @@ h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x61;&#x
 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#x61;&#x65;&#x79;&#x61;&#x6b;&#x6f;&#118;&#x65;&#110;&#x6b;&#x6f;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript> | <a href="https://github.com/aeyakovenko">GitHub</a> | <a href="https://www.linkedin.com/profile/view?id=312504086">LinkedIn</a> | <a href="http://aeyakovenko.github.io/resume.html">resume</a></p>
+<h2 id="its-all-text-in-osx">It's All Text! in OSX</h2>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="ot">tempfoo=</span>macvimreplacetext
+<span class="ot">FILE=</span><span class="kw">`mktemp</span> <span class="st">&quot;/tmp/</span><span class="ot">${tempfoo}</span><span class="st">.XXXXXX&quot;</span><span class="kw">`</span>
+<span class="kw">cat</span> /dev/stdin <span class="kw">&gt;</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span><span class="kw">;</span>
+<span class="kw">/usr/local/bin/mvim</span> -f <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span>
+<span class="kw">cat</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span></code></pre>
+<p>Create an automator service to launch MacVim and replace selected text.</p>
 <h2 id="wtf-c">wtf C!</h2>
 <pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#include &lt;stdio.h&gt;</span>
 <span class="ot">#include &lt;string.h&gt;</span>

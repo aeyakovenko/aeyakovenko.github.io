@@ -3,6 +3,19 @@ ANATOLY YAKOVENKO
 
 aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [LinkedIn](https://www.linkedin.com/profile/view?id=312504086) | [resume](http://aeyakovenko.github.io/resume.html)
 
+It's All Text! in OSX
+---------------------
+
+```bash
+tempfoo=macvimreplacetext
+FILE=`mktemp "/tmp/${tempfoo}.XXXXXX"`
+cat /dev/stdin > "$FILE";
+/usr/local/bin/mvim -f "$FILE"
+cat "$FILE"
+```
+
+Create an automator service to launch MacVim and replace selected text.
+
 wtf C!
 -----------------------
 
