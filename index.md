@@ -12,6 +12,7 @@ FILE=`mktemp "/tmp/${tempfoo}.XXXXXX"`
 cat /dev/stdin > "$FILE";
 /usr/local/bin/mvim -f "$FILE"
 cat "$FILE"
+rm "$FILE"
 ```
 
 Create an automator service to launch MacVim and replace selected text.
