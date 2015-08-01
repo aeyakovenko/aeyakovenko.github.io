@@ -38,7 +38,7 @@ Software developer with over 10 years of experience in embedded operating system
    
 #### Alescere LLC, Lisle IL
 ##### Co-Founder, 2001 to 2003
-   * Founding member of [Alescere], a VOIP startup
+   * Founding member of [Alescere], a VoIP startup
    * Lead development of SIP and [RTP] protocol stacks and server components for a VoIP system for small businesses.
 
 #### University of Illinois at Urbana-Champaign
