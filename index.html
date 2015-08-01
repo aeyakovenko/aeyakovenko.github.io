@@ -7,23 +7,41 @@
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
+div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
 table.sourceCode { width: 100%; line-height: 100%; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; }
-code > span.dt { color: #902000; }
-code > span.dv { color: #40a070; }
-code > span.bn { color: #40a070; }
-code > span.fl { color: #40a070; }
-code > span.ch { color: #4070a0; }
-code > span.st { color: #4070a0; }
-code > span.co { color: #60a0b0; font-style: italic; }
-code > span.ot { color: #007020; }
-code > span.al { color: #ff0000; font-weight: bold; }
-code > span.fu { color: #06287e; }
-code > span.er { color: #ff0000; font-weight: bold; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
   </style>
   <link rel="stylesheet" href="github.css" type="text/css" />
 </head>
@@ -36,15 +54,15 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 // -->
 </script><noscript>&#x61;&#x65;&#x79;&#x61;&#x6b;&#x6f;&#118;&#x65;&#110;&#x6b;&#x6f;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript> | <a href="https://github.com/aeyakovenko">GitHub</a> | <a href="https://www.linkedin.com/profile/view?id=312504086">LinkedIn</a> | <a href="http://aeyakovenko.github.io/resume.html">resume</a></p>
 <h2 id="its-all-text-in-osx">It's All Text! in OSX</h2>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="ot">tempfoo=</span>macvimreplacetext
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ot">tempfoo=</span>macvimreplacetext
 <span class="ot">FILE=</span><span class="kw">`mktemp</span> <span class="st">&quot;/tmp/</span><span class="ot">${tempfoo}</span><span class="st">.XXXXXX&quot;</span><span class="kw">`</span>
 <span class="kw">cat</span> /dev/stdin <span class="kw">&gt;</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span><span class="kw">;</span>
 <span class="kw">/usr/local/bin/mvim</span> -f <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span>
 <span class="kw">cat</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span>
-<span class="kw">rm</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span></code></pre>
+<span class="kw">rm</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span></code></pre></div>
 <p>Create an automator service to launch MacVim and replace selected text.</p>
 <h2 id="wtf-c">wtf C!</h2>
-<pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#include &lt;stdio.h&gt;</span>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#include &lt;stdio.h&gt;</span>
 <span class="ot">#include &lt;string.h&gt;</span>
 
 <span class="ot">#define C_ASSERT(test) \</span>
@@ -59,19 +77,19 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
    <span class="co">//wtf = 0;              //unasignable type error</span>
    printf(<span class="st">&quot;%p</span><span class="ch">\n</span><span class="st">&quot;</span>, &amp;wtf);   <span class="co">//linker error</span>
    <span class="kw">return</span> <span class="dv">0</span>;
-}</code></pre>
+}</code></pre></div>
 <p>So the reason a function has a size even though its unasignable is so we can do arithmetic on function pointers.</p>
-<pre class="sourceCode c"><code class="sourceCode c">   assert(main<span class="dv">+1</span> == ((<span class="dt">char</span>*)main)+<span class="dv">1</span>);</code></pre>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">   assert(main<span class="dv">+1</span> == ((<span class="dt">char</span>*)main)+<span class="dv">1</span>);</code></pre></div>
 <h2 id="disable-warnings-in-gcc">disable warnings in gcc</h2>
-<pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#pragma GCC system_header</span></code></pre>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#pragma GCC system_header</span></code></pre></div>
 <p>works great for generated code.</p>
 <h2 id="cgdb-highlight-current-line">cgdb, highlight current line</h2>
 <pre class="viml"><code>:hi SelectedLineNr cterm=reverse</code></pre>
 <h2 id="printing-all-the-gcc-defines">printing all the gcc defines</h2>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">gcc</span> -dM -E - <span class="kw">&lt;</span> /dev/null</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">gcc</span> -dM -E - <span class="kw">&lt;</span> /dev/null</code></pre></div>
 <h2 id="foldr-map-and-curry-in-the-c-preprocessor-language">foldr map and curry in the C preprocessor language</h2>
 <p>Might as well do scheme next :).</p>
-<pre class="sourceCode c"><code class="sourceCode c"><span class="co">//compile assert macro</span>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="co">//compile assert macro</span>
 <span class="ot">#define C_ASSERT(test) \</span>
 <span class="ot">    switch(0) {\</span>
 <span class="ot">      case 0:\</span>
@@ -189,9 +207,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 
 
    <span class="kw">return</span> <span class="dv">0</span>;
-}</code></pre>
+}</code></pre></div>
 <h2 id="counting-args-with-c-macros">counting args with C macros</h2>
-<pre class="sourceCode c"><code class="sourceCode c"><span class="co">/**</span>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="co">/**</span>
 <span class="co"> * we need a comma at the start for ##_VA_ARGS__ to consume then</span>
 <span class="co"> * the arguments are pushed out in such a way that &#39;cnt&#39; ends up with</span>
 <span class="co"> * the right count.  </span>
@@ -214,18 +232,18 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
    C_ASSERT(<span class="dv">5</span> ==  COUNT_ARGS(a,b,c,d,e));
    C_ASSERT(<span class="dv">6</span> ==  COUNT_ARGS(a,b,c,d,e,f));
    <span class="kw">return</span> <span class="dv">0</span>;
-}</code></pre>
+}</code></pre></div>
 <h2 id="compile-time-assert">compile time assert</h2>
-<pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#define C_ASSERT(test) \</span>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#define C_ASSERT(test) \</span>
 <span class="ot">    switch(0) {\</span>
 <span class="ot">      case 0:\</span>
 <span class="ot">      case test:;\</span>
-<span class="ot">    }</span></code></pre>
+<span class="ot">    }</span></code></pre></div>
 <h2 id="make-repl-sort-of">make repl, sort of</h2>
-<pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#run make &#39;$(expression)&#39; to see what make thinks the expression evaluates to from your rules</span>
-<span class="dv">$$%:</span><span class="dt">;@</span><span class="ch">$(</span><span class="kw">call</span><span class="st"> true</span><span class="ch">)$(</span><span class="kw">info</span><span class="st"> </span><span class="ch">$(</span><span class="kw">call</span><span class="st"> or</span><span class="kw">,</span><span class="ch">$$$*))</span></code></pre>
+<div class="sourceCode"><pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#run make &#39;$(expression)&#39; to see what make thinks the expression evaluates to from your rules</span>
+<span class="dv">$$%:</span><span class="dt">;@</span><span class="ch">$(</span><span class="kw">call</span><span class="st"> true</span><span class="ch">)$(</span><span class="kw">info</span><span class="st"> </span><span class="ch">$(</span><span class="kw">call</span><span class="st"> or</span><span class="kw">,</span><span class="ch">$$$*))</span></code></pre></div>
 <h2 id="make-cabal">make + cabal</h2>
-<pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#list of haskell sources</span>
+<div class="sourceCode"><pre class="sourceCode makefile"><code class="sourceCode makefile"><span class="co">#list of haskell sources</span>
 <span class="dt">hs_files</span><span class="ch">=</span><span class="st">RBM/List.hs</span>
 <span class="co">#list of cabal files</span>
 <span class="dt">cabal_files</span><span class="ch">=</span><span class="st">rbm.cabal</span>
@@ -252,7 +270,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
     cabal configure --enable-tests --enable-coverage --enable-library-profiling
     <span class="ch">@</span><span class="fu">touch </span><span class="ch">$@</span>
 
-<span class="dv">$$%:</span><span class="dt">;@</span><span class="ch">$(</span><span class="kw">call</span><span class="st"> true</span><span class="ch">)$(</span><span class="kw">info</span><span class="st"> </span><span class="ch">$(</span><span class="kw">call</span><span class="st"> or</span><span class="kw">,</span><span class="ch">$$$*))</span></code></pre>
+<span class="dv">$$%:</span><span class="dt">;@</span><span class="ch">$(</span><span class="kw">call</span><span class="st"> true</span><span class="ch">)$(</span><span class="kw">info</span><span class="st"> </span><span class="ch">$(</span><span class="kw">call</span><span class="st"> or</span><span class="kw">,</span><span class="ch">$$$*))</span></code></pre></div>
 <h2 id="vimrc">.vimrc</h2>
 <pre class="viml"><code>&quot;remembering cursor position between sessions
 :set viminfo=&#39;10,\&quot;100,:20,%,n~/.viminfo

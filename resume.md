@@ -12,7 +12,7 @@ Software developer with over 10 years of experience in embedded operating system
   * Embedded Operating Systems, RTOS, Linux Kernel, Android, Qualcomm MSMs, System MMUs, ARM, Hexagon DSP
 
 #### Languages and Tools
-  * C, C++, Haskell, Lua, Make, Bash, Python, Ruby, Git, Perforce, GDB, JTAG, Trace32
+  * C, Haskell, Make, Lua, Python, Ruby, Bash, C++, Java, Git, Perforce, GDB, JTAG, Trace32
 
 ### WORK EXPERIENCE
 #### Qualcomm, San Diego CA
@@ -21,17 +21,25 @@ Software developer with over 10 years of experience in embedded operating system
 ##### Staff Engineer, 2008 - 2012
 ##### Senior Engineer, 2006 - 2009
 ##### Engineer, 2003 - 2006
-   * Heterogeneous Multicore Compute
-   Lead development of FastRPC, a brand new technology featured in [Hexagon SDK] for off-loading computations between ARM and DSP co-processors on Qualcomm's mobile chips.  Achieved a 10x reduction in co-processor communication latency.  Designed and developed [Linux Kernel], Qnx and Qurt RTOS drivers. Developed several [patents], and commercialized on modern Android, Windows and Qnx devices.  Worked with internal and third party developers on performance and power optimizations of Computer Vision, Augmented Reality, and 3D Camera technologies utilizing Qualcomm's DSP.
-   * Mobile Operating Systems
-   Lead developer of Inter-Process Communication for BREW, Qualcomm's mobile operating system - shipped on thousands of devices and millions of units.  Built commercial quality developer tools such as custom IDL compilers, mock object generators, elf parsers, and system call trace tools. Wrote unit test coverage frameworks with an exception simulator, achieving 100% code coverage in critical pieces of the kernel. Lead interface and code reviews, enforcing strict requirements for API binary backwards compatibility, performance, and application and kernel security.
-   * QChat Push To Talk
-   Developed network components using SIP/HTTP/RTP and proprietary standards for QChat Push To Talk service.  Designed high performance logging tools to handle tens of thousands of transactions per second from many networked components with a real-time monitoring system.
 
+###### OpenDSP
+   * Lead Architect of a brand new technology for utilizing DSP subsystems on Qualcomm chipsets for next-generation high-performance applications.
+   * Commercial applications include Augmented Reality, Virtual Reality, 3D Camera processing, 4K video post-processing, and GoogleX’s Project Tango.
+   * Technology used by all major OEMS, such as Samsung, LG, Google, Xiaomi, OnePlus.
+
+###### BREW
+   * Core kernel developer for BREW’s Operating System. 
+   * Built critical features such as application sandboxing, device driver framework, interprocess communication, system call tracing tools, IDL compiler for network transparent objects. 
+   * Shipped to thousands of different handsets and in millions of units.
+
+###### QChat
+   * Software developer for server components of a Push2Talk service.
+   * Implemented various network protocols such as SIP/RTP/HTTP, and high performance logging and tracing tools for a large distributed system with over 40 components.
+   
 #### Alescere LLC, Lisle IL
 ##### Co-Founder, 2001 to 2003
    * Founding member of [Alescere], a VOIP startup
-   Lead development of SIP and [RTP] protocol stacks and server components for a VoIP system for small businesses.
+   * Lead development of SIP and [RTP] protocol stacks and server components for a VoIP system for small businesses.
 
 #### University of Illinois at Urbana-Champaign
 ##### Research Assistant, 2003
@@ -45,7 +53,7 @@ Software developer with over 10 years of experience in embedded operating system
 ### References
    * Brian Kelley, Senior Director of Technology, <bkelley@quicinc.com>
    * Rob Walker, Senior Director of Engineering, <rwalker@quicinc.com>
-   * Ramesh Chandrasekhar, Director of Engineering, <rameshc@qti.qualcomm.com>
+   * Ramesh Chandrasekhar, Senior Director of Engineering, <rameshc@qti.qualcomm.com>
 
 ### EDUCATION
 #### Bachelor of Science in Computer Science
