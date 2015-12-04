@@ -53,6 +53,8 @@ h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x61;&#x
 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#x61;&#x65;&#x79;&#x61;&#x6b;&#x6f;&#118;&#x65;&#110;&#x6b;&#x6f;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript> | <a href="https://github.com/aeyakovenko">GitHub</a> | <a href="https://www.linkedin.com/profile/view?id=312504086">LinkedIn</a> | <a href="http://aeyakovenko.github.io/resume.html">resume</a></p>
+<h2 id="git-add-p4-opened">git-add-p4-opened</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">alias</span> git-add-p4-opened=<span class="st">&quot;p4 opened | cut -f 1 -d &#39;#&#39; | xargs p4 where | cut -f 3 -d &#39; &#39; | xargs git add&quot;</span></code></pre></div>
 <h2 id="its-all-text-in-osx">It's All Text! in OSX</h2>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ot">tempfoo=</span>macvimreplacetext
 <span class="ot">FILE=</span><span class="kw">`mktemp</span> <span class="st">&quot;/tmp/</span><span class="ot">${tempfoo}</span><span class="st">.XXXXXX&quot;</span><span class="kw">`</span>

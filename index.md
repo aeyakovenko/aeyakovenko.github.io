@@ -3,6 +3,13 @@ ANATOLY YAKOVENKO
 
 aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [LinkedIn](https://www.linkedin.com/profile/view?id=312504086) | [resume](http://aeyakovenko.github.io/resume.html)
 
+git-add-p4-opened
+-----------------
+
+```bash
+alias git-add-p4-opened="p4 opened | cut -f 1 -d '#' | xargs p4 where | cut -f 3 -d ' ' | xargs git add"
+```
+
 It's All Text! in OSX
 ---------------------
 
