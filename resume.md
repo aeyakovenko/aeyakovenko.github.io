@@ -5,14 +5,14 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 
 ### SUMMARY
 
-Software developer with over 10 years of experience in embedded operating systems, shipping software on millions of units, developing [patents], leading projects and contributing to large groups including [Linux Kernel], with a focus on performance and optimization for Qualcomm ARM and DSP processors.
+Software developer with over 10 years of experience in embedded operating systems, shipping software on millions of units, developing [patents], leading projects and contributing to large groups including [Linux Kernel], with a focus on performance and optimizations.
 
 ### SKILLS
 #### Hardware and Systems
-  * Embedded Operating Systems, RTOS, Linux Kernel, Android, Qualcomm MSMs, System MMUs, ARM, Hexagon DSP
+  * Embedded Operating Systems, RTOS, Linux Kernel, Android, Qualcomm MSMs, ARM, Hexagon DSP
 
 #### Languages and Tools
-  * C, Haskell, Make, Lua, Python, Ruby, Bash, C++, Java, Git, Perforce, GDB, JTAG, Trace32
+  * C, Haskell, Make, Lua, Bash, Python, Ruby, C++, Java, Perforce, Git, GDB, JTAG, Trace32
 
 ### WORK EXPERIENCE
 #### Qualcomm, San Diego CA
@@ -22,14 +22,14 @@ Software developer with over 10 years of experience in embedded operating system
 ##### Senior Engineer, 2006 - 2009
 ##### Engineer, 2003 - 2006
 
-###### OpenDSP
-   * Lead Architect of a brand new technology for utilizing DSP subsystems on Qualcomm chipsets for next-generation high-performance applications.
+###### Advanced Technologies Group
+   * Lead Architect of a high performance DSP off-loading software stack on Qualcomm chipsets for next-generation applications.
    * Commercial applications include Augmented Reality, Virtual Reality, 3D Camera processing, 4K video post-processing, and GoogleX’s Project Tango.
    * Technology used by all major OEMS, such as Samsung, LG, Google, Xiaomi, OnePlus.
 
 ###### BREW
    * Core kernel developer for BREW’s Operating System. 
-   * Built critical features such as application sandboxing, device driver framework, interprocess communication, system call tracing tools, IDL compiler for network transparent objects. 
+   * Built critical features such as application sandboxing, kernel containers, device driver framework, interprocess communication, system call tracing tools, IDL compilers.
    * Shipped to thousands of different handsets and in millions of units.
 
 ###### QChat
@@ -48,7 +48,7 @@ Software developer with over 10 years of experience in embedded operating system
    * Implemented a roaming protocol for 802.11a/b networks for NetBSD
 
 #### Personal Research
-   * Neural Networks, Genetic Algorithms, Markov Models, and Bayesian Inference Algorithms
+   * Machine Learning and functional programming.
 
 ### References
    * Brian Kelley, Senior Director of Technology, <bkelley@quicinc.com>
