@@ -47,8 +47,9 @@ Software developer with over 10 years of experience in embedded operating system
    * Designed a probabilistic scheduler for the Linux kernel
    * Implemented a roaming protocol for 802.11a/b networks for NetBSD
 
-#### Personal Research
+#### Personal Interests
    * Machine Learning and functional programming.
+   * Underwater hockey!
 
 ### References
    * Brian Kelley, Senior Director of Technology, <bkelley@quicinc.com>
