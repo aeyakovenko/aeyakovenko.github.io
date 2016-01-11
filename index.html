@@ -53,42 +53,6 @@ h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x61;&#x
 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#x61;&#x65;&#x79;&#x61;&#x6b;&#x6f;&#118;&#x65;&#110;&#x6b;&#x6f;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript> | <a href="https://github.com/aeyakovenko">GitHub</a> | <a href="https://www.linkedin.com/profile/view?id=312504086">LinkedIn</a> | <a href="http://aeyakovenko.github.io/resume.html">resume</a></p>
-<h2 id="git-add-p4-opened">git-add-p4-opened</h2>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">alias</span> git-add-p4-opened=<span class="st">&quot;p4 opened | cut -f 1 -d &#39;#&#39; | xargs p4 where | cut -f 3 -d &#39; &#39; | xargs git add&quot;</span></code></pre></div>
-<h2 id="its-all-text-in-osx">It's All Text! in OSX</h2>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ot">tempfoo=</span>macvimreplacetext
-<span class="ot">FILE=</span><span class="kw">`mktemp</span> <span class="st">&quot;/tmp/</span><span class="ot">${tempfoo}</span><span class="st">.XXXXXX&quot;</span><span class="kw">`</span>
-<span class="kw">cat</span> /dev/stdin <span class="kw">&gt;</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span><span class="kw">;</span>
-<span class="kw">/usr/local/bin/mvim</span> -f <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span>
-<span class="kw">cat</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span>
-<span class="kw">rm</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span></code></pre></div>
-<p>Create an automator service to launch MacVim and replace selected text.</p>
-<h2 id="wtf-c">wtf C!</h2>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#include &lt;stdio.h&gt;</span>
-<span class="ot">#include &lt;string.h&gt;</span>
-
-<span class="ot">#define C_ASSERT(test) \</span>
-<span class="ot">    switch(0) {\</span>
-<span class="ot">      case 0:\</span>
-<span class="ot">      case test:;\</span>
-<span class="ot">    }</span>
-
-<span class="dt">int</span> main() {
-   <span class="dt">void</span> (wtf)(<span class="dt">void</span>);
-   C_ASSERT(<span class="kw">sizeof</span>(wtf) == <span class="dv">1</span>);
-   <span class="co">//wtf = 0;              //unasignable type error</span>
-   printf(<span class="st">&quot;%p</span><span class="ch">\n</span><span class="st">&quot;</span>, &amp;wtf);   <span class="co">//linker error</span>
-   <span class="kw">return</span> <span class="dv">0</span>;
-}</code></pre></div>
-<p>So the reason a function has a size even though its unasignable is so we can do arithmetic on function pointers.</p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">   assert(main<span class="dv">+1</span> == ((<span class="dt">char</span>*)main)+<span class="dv">1</span>);</code></pre></div>
-<h2 id="disable-warnings-in-gcc">disable warnings in gcc</h2>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#pragma GCC system_header</span></code></pre></div>
-<p>works great for generated code.</p>
-<h2 id="cgdb-highlight-current-line">cgdb, highlight current line</h2>
-<pre class="viml"><code>:hi SelectedLineNr cterm=reverse</code></pre>
-<h2 id="printing-all-the-gcc-defines">printing all the gcc defines</h2>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">gcc</span> -dM -E - <span class="kw">&lt;</span> /dev/null</code></pre></div>
 <h2 id="foldr-map-and-curry-in-the-c-preprocessor-language">foldr map and curry in the C preprocessor language</h2>
 <p>Might as well do scheme next :).</p>
 <div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="co">//compile assert macro</span>
@@ -210,6 +174,25 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 
    <span class="kw">return</span> <span class="dv">0</span>;
 }</code></pre></div>
+<h2 id="wtf-c">wtf C!</h2>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#include &lt;stdio.h&gt;</span>
+<span class="ot">#include &lt;string.h&gt;</span>
+
+<span class="ot">#define C_ASSERT(test) \</span>
+<span class="ot">    switch(0) {\</span>
+<span class="ot">      case 0:\</span>
+<span class="ot">      case test:;\</span>
+<span class="ot">    }</span>
+
+<span class="dt">int</span> main() {
+   <span class="dt">void</span> (wtf)(<span class="dt">void</span>);
+   C_ASSERT(<span class="kw">sizeof</span>(wtf) == <span class="dv">1</span>);
+   <span class="co">//wtf = 0;              //unasignable type error</span>
+   printf(<span class="st">&quot;%p</span><span class="ch">\n</span><span class="st">&quot;</span>, &amp;wtf);   <span class="co">//linker error</span>
+   <span class="kw">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+<p>So the reason a function has a size even though its unasignable is so we can do arithmetic on function pointers.</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">   assert(main<span class="dv">+1</span> == ((<span class="dt">char</span>*)main)+<span class="dv">1</span>);</code></pre></div>
 <h2 id="counting-args-with-c-macros">counting args with C macros</h2>
 <div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="co">/**</span>
 <span class="co"> * we need a comma at the start for ##_VA_ARGS__ to consume then</span>
@@ -273,6 +256,23 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
     <span class="ch">@</span><span class="fu">touch </span><span class="ch">$@</span>
 
 <span class="dv">$$%:</span><span class="dt">;@</span><span class="ch">$(</span><span class="kw">call</span><span class="st"> true</span><span class="ch">)$(</span><span class="kw">info</span><span class="st"> </span><span class="ch">$(</span><span class="kw">call</span><span class="st"> or</span><span class="kw">,</span><span class="ch">$$$*))</span></code></pre></div>
+<h2 id="cgdb-highlight-current-line">cgdb, highlight current line</h2>
+<pre class="viml"><code>:hi SelectedLineNr cterm=reverse</code></pre>
+<h2 id="printing-all-the-gcc-defines">printing all the gcc defines</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">gcc</span> -dM -E - <span class="kw">&lt;</span> /dev/null</code></pre></div>
+<h2 id="disable-warnings-in-gcc">disable warnings in gcc</h2>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#pragma GCC system_header</span></code></pre></div>
+<p>works great for generated code.</p>
+<h2 id="git-add-p4-opened">git-add-p4-opened</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">alias</span> git-add-p4-opened=<span class="st">&quot;p4 opened | cut -f 1 -d &#39;#&#39; | xargs p4 where | cut -f 3 -d &#39; &#39; | xargs git add&quot;</span></code></pre></div>
+<h2 id="its-all-text-in-osx">It's All Text! in OSX</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ot">tempfoo=</span>macvimreplacetext
+<span class="ot">FILE=</span><span class="kw">`mktemp</span> <span class="st">&quot;/tmp/</span><span class="ot">${tempfoo}</span><span class="st">.XXXXXX&quot;</span><span class="kw">`</span>
+<span class="kw">cat</span> /dev/stdin <span class="kw">&gt;</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span><span class="kw">;</span>
+<span class="kw">/usr/local/bin/mvim</span> -f <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span>
+<span class="kw">cat</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span>
+<span class="kw">rm</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span></code></pre></div>
+<p>Create an automator service to launch MacVim and replace selected text.</p>
 <h2 id="vimrc">.vimrc</h2>
 <pre class="viml"><code>&quot;remembering cursor position between sessions
 :set viminfo=&#39;10,\&quot;100,:20,%,n~/.viminfo

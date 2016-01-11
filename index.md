@@ -3,79 +3,6 @@ ANATOLY YAKOVENKO
 
 aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [LinkedIn](https://www.linkedin.com/profile/view?id=312504086) | [resume](http://aeyakovenko.github.io/resume.html)
 
-git-add-p4-opened
------------------
-
-```bash
-alias git-add-p4-opened="p4 opened | cut -f 1 -d '#' | xargs p4 where | cut -f 3 -d ' ' | xargs git add"
-```
-
-It's All Text! in OSX
----------------------
-
-```bash
-tempfoo=macvimreplacetext
-FILE=`mktemp "/tmp/${tempfoo}.XXXXXX"`
-cat /dev/stdin > "$FILE";
-/usr/local/bin/mvim -f "$FILE"
-cat "$FILE"
-rm "$FILE"
-```
-
-Create an automator service to launch MacVim and replace selected text.
-
-wtf C!
------------------------
-
-
-```C
-#include <stdio.h>
-#include <string.h>
-
-#define C_ASSERT(test) \
-    switch(0) {\
-      case 0:\
-      case test:;\
-    }
-
-int main() {
-   void (wtf)(void);
-   C_ASSERT(sizeof(wtf) == 1);
-   //wtf = 0;              //unasignable type error
-   printf("%p\n", &wtf);   //linker error
-   return 0;
-}
-```
-
-So the reason a function has a size even though its unasignable is so we can do arithmetic on function pointers.
-
-```C
-   assert(main+1 == ((char*)main)+1);
-```
-
-disable warnings in gcc
------------------------
-
-```C
-#pragma GCC system_header
-```
-
-works great for generated code.
-
-cgdb, highlight current line
-----------------------------
-
-```VimL
-:hi SelectedLineNr cterm=reverse
-```
-
-printing all the gcc defines
-----------------------------
-
-```bash
-gcc -dM -E - < /dev/null
-```
-
 foldr map and curry in the C preprocessor language
 --------------------------------------------------
 
@@ -203,6 +130,35 @@ int main(void) {
 }
 ```
 
+wtf C!
+-----------------------
+
+```C
+#include <stdio.h>
+#include <string.h>
+
+#define C_ASSERT(test) \
+    switch(0) {\
+      case 0:\
+      case test:;\
+    }
+
+int main() {
+   void (wtf)(void);
+   C_ASSERT(sizeof(wtf) == 1);
+   //wtf = 0;              //unasignable type error
+   printf("%p\n", &wtf);   //linker error
+   return 0;
+}
+```
+
+So the reason a function has a size even though its unasignable is so we can do arithmetic on function pointers.
+
+```C
+   assert(main+1 == ((char*)main)+1);
+```
+
+
 counting args with C macros
 ---------------------------
 
@@ -285,6 +241,51 @@ dist/setup-config:$(cabal_files) Makefile
 
 $$%:;@$(call true)$(info $(call or,$$$*))
 ```
+
+cgdb, highlight current line
+----------------------------
+
+```VimL
+:hi SelectedLineNr cterm=reverse
+```
+
+printing all the gcc defines
+----------------------------
+
+```bash
+gcc -dM -E - < /dev/null
+```
+
+
+disable warnings in gcc
+-----------------------
+
+```C
+#pragma GCC system_header
+```
+
+works great for generated code.
+
+git-add-p4-opened
+-----------------
+
+```bash
+alias git-add-p4-opened="p4 opened | cut -f 1 -d '#' | xargs p4 where | cut -f 3 -d ' ' | xargs git add"
+```
+
+It's All Text! in OSX
+---------------------
+
+```bash
+tempfoo=macvimreplacetext
+FILE=`mktemp "/tmp/${tempfoo}.XXXXXX"`
+cat /dev/stdin > "$FILE";
+/usr/local/bin/mvim -f "$FILE"
+cat "$FILE"
+rm "$FILE"
+```
+
+Create an automator service to launch MacVim and replace selected text.
 
 .vimrc
 ------
