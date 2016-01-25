@@ -30,7 +30,7 @@ Software developer with over 10 years of experience in embedded operating system
 ###### BREW
    * Core kernel developer for BREW’s Operating System. 
    * Built critical features such as application sand-boxing, kernel containers, device driver framework, IPC stack, system call tracing tools, IDL compilers.
-   * APIs and tools used by thousands of 3rd party developers, code shipped on thousands of different handsets and in millions of units.
+   * APIs and tools used by thousands of 3rd party developers, code shipped on hundreds of different handsets and in millions of units.
 
 ###### QChat
    * Software developer for server components of a Push2Talk service.
