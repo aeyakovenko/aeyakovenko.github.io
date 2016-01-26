@@ -5,7 +5,7 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 
 ### SUMMARY
 
-Software developer with over 10 years of experience in embedded operating systems, shipping software on millions of units, developing [patents], leading projects and contributing to large groups including [Linux Kernel], with a focus on performance and optimizations.
+Software developer with over 10 years of experience working on performance critical features for embedded and real time operating systems, shipping software on millions of units, developing [patents], leading projects and contributing to large groups including [Linux Kernel], with a focus on test driven development and object oriented design.
 
 ### SKILLS
 #### Hardware and Systems
