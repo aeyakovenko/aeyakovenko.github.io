@@ -48,7 +48,7 @@ Software developer with over 10 years of experience working on performance criti
    * Implemented a roaming protocol for 802.11a/b networks for NetBSD
 
 #### Personal Interests
-   * Machine Learning and functional programming.
+   * [Machine Learning] and functional programming.
    * Underwater hockey - 2012 USA Elite Team!
 
 ### References
@@ -63,6 +63,7 @@ Software developer with over 10 years of experience working on performance criti
 [20140136817]: https://www.google.com/patents/US20140136817
 [20140096148]: https://www.google.com/patents/US20140096148
 [Linux Kernel]: https://www.codeaurora.org/cgit/quic/le/kernel/msm/tree/drivers/char/adsprpc.c?h=msm-3.4
+[Machine Learning]: https://github.com/aeyakovenko/rbm
 [Hexagon SDK]: https://developer.qualcomm.com/mobile-development/maximize-hardware/multimedia-optimization-hexagon-sdk
 [patents]: https://www.google.com/search?tbo=p&tbm=pts&hl=en&q=ininventor:%22Anatoly+E.+Yakovenko%22
 [Alescere]: http://www.linuxjournal.com/article/6763
