@@ -51,11 +51,6 @@ Software developer with over 10 years of experience working on performance criti
    * [Machine Learning] and functional programming.
    * Underwater hockey - 2012 USA Elite Team!
 
-### References
-   * Brian Kelley, Senior Director of Technology, <bkelley@quicinc.com>
-   * Rob Walker, Senior Director of Engineering, <rwalker@quicinc.com>
-   * Ramesh Chandrasekhar, Senior Director of Engineering, <rameshc@qti.qualcomm.com>
-
 ### EDUCATION
 #### Bachelor of Science in Computer Science
 ##### University of Illinois at Urbana-Champaign, 2003
