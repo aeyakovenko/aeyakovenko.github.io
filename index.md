@@ -287,6 +287,15 @@ rm "$FILE"
 
 Create an automator service to launch MacVim and replace selected text.
 
+map capslock to leftctrl in windows
+-----------------------------------
+create a file with the following registery script, then run it
+```
+REGEDIT4
+[HKEY_CURRENT_USER\Keyboard Layout]
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
+```
+
 .vimrc
 ------
 ```VimL

@@ -273,6 +273,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <span class="kw">cat</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span>
 <span class="kw">rm</span> <span class="st">&quot;</span><span class="ot">$FILE</span><span class="st">&quot;</span></code></pre></div>
 <p>Create an automator service to launch MacVim and replace selected text.</p>
+<h2 id="map-capslock-to-leftctrl-in-windows">map capslock to leftctrl in windows</h2>
+<p>create a file with the following registery script, then run it</p>
+<pre><code>REGEDIT4
+[HKEY_CURRENT_USER\Keyboard Layout]
+&quot;Scancode Map&quot;=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00</code></pre>
 <h2 id="vimrc">.vimrc</h2>
 <pre class="viml"><code>&quot;remembering cursor position between sessions
 :set viminfo=&#39;10,\&quot;100,:20,%,n~/.viminfo
