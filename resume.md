@@ -5,7 +5,7 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 
 ### SKILLS
 #### Hardware and Systems
-  * Embedded Operating Systems, RTOS, Linux Kernel, RPC, IPC, Android, Qualcomm MSMs, ARM, Hexagon DSP
+  * Embedded Operating Systems, RTOS, [Linux Kernel], RPC, IPC, Android, Qualcomm MSMs, ARM, Hexagon DSP
 
 #### Languages and Tools
   * C, C++, Haskell, Make, Lua, Bash, Python, Ruby, Java, Perforce, Git, GDB, JTAG, Trace32
@@ -56,7 +56,7 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 #### Bachelor of Science in Computer Science
 ##### University of Illinois at Urbana-Champaign, 2003
 
-[Linux]: https://www.codeaurora.org/cgit/quic/le/kernel/msm/tree/drivers/char/adsprpc.c?h=msm-3.4
+[Linux Kernel]: https://www.codeaurora.org/cgit/quic/le/kernel/msm/tree/drivers/char/adsprpc.c?h=msm-3.4
 [Machine Learning]: https://github.com/aeyakovenko/rbm
 [DSP]: https://developer.qualcomm.com/software/hexagon-dsp-sdk/dsp-processor
 [Alescere]: http://www.linuxjournal.com/article/6763
