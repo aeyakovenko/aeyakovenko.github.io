@@ -3,16 +3,17 @@ ANATOLY YAKOVENKO
 
 aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [LinkedIn](https://www.linkedin.com/profile/view?id=312504086) | [resume](http://aeyakovenko.github.io/resume.html)
 
-### SUMMARY
-
-Software developer with over 10 years of experience working on performance critical features for embedded and real time operating systems, shipping software on millions of units, developing [patents], leading projects and contributing to large groups including [Linux Kernel], with a focus on test driven development and object oriented design.
-
 ### SKILLS
 #### Hardware and Systems
-  * Embedded Operating Systems, RTOS, Linux Kernel, Android, Qualcomm MSMs, ARM, Hexagon DSP
+  * Embedded Operating Systems, RTOS, Linux Kernel, RPC, IPC, Android, Qualcomm MSMs, ARM, Hexagon DSP
 
 #### Languages and Tools
   * C, C++, Haskell, Make, Lua, Bash, Python, Ruby, Java, Perforce, Git, GDB, JTAG, Trace32
+
+#### Patents
+  * [US20150301955](https://www.google.com/patents/US20150301955) Extending protection domains to coprocessors.
+  * [US8869176](https://www.google.com/patents/US8869176) Exposing host operating system services to an auxillary processor.
+  * [US9092281](https://www.google.com/patents/US9092281) Fast remote procedure call.
 
 ### WORK EXPERIENCE
 #### Qualcomm, San Diego CA
@@ -23,7 +24,8 @@ Software developer with over 10 years of experience working on performance criti
 ##### Engineer, 2003 - 2006
 
 ###### Advanced Technologies Group
-   * Lead Architect on a team of 10 for high performance DSP off-loading software stack on Qualcomm chipsets for next-generation applications.
+   * Lead Architect on a team of 10 for high performance [DSP] off-loading software stack on Qualcomm chipsets for next-generation applications.
+   * Comercialized on multiple chipset families, [Linux], Windows and QNX.
    * Commercial applications include Augmented Reality, Virtual Reality, 3D Camera processing, 4K video post-processing, and GoogleX’s Project Tango.
    * Technology used by 3rd party developers from major OEMS, such as Samsung, LG, Google, Xiaomi, OnePlus.
 
@@ -55,11 +57,8 @@ Software developer with over 10 years of experience working on performance criti
 #### Bachelor of Science in Computer Science
 ##### University of Illinois at Urbana-Champaign, 2003
 
-[20140136817]: https://www.google.com/patents/US20140136817
-[20140096148]: https://www.google.com/patents/US20140096148
-[Linux Kernel]: https://www.codeaurora.org/cgit/quic/le/kernel/msm/tree/drivers/char/adsprpc.c?h=msm-3.4
+[Linux]: https://www.codeaurora.org/cgit/quic/le/kernel/msm/tree/drivers/char/adsprpc.c?h=msm-3.4
 [Machine Learning]: https://github.com/aeyakovenko/rbm
-[Hexagon SDK]: https://developer.qualcomm.com/mobile-development/maximize-hardware/multimedia-optimization-hexagon-sdk
-[patents]: https://www.google.com/search?tbo=p&tbm=pts&hl=en&q=ininventor:%22Anatoly+E.+Yakovenko%22
+[DSP]: https://developer.qualcomm.com/software/hexagon-dsp-sdk/dsp-processor
 [Alescere]: http://www.linuxjournal.com/article/6763
 [RTP]: http://gst-plugins-farsight.sourcearchive.com/documentation/0.12.10-3/jrtplib__c_8cpp-source.html
