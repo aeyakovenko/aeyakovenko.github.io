@@ -26,7 +26,7 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 ###### Advanced Technologies Group
    * Lead Architect on a team of 10 for high performance [DSP] off-loading software stack on Qualcomm chipsets for next-generation applications.
    * Commercial applications include Augmented Reality, Virtual Reality, 3D Camera processing, 4K video post-processing, and GoogleX’s Project Tango.
-   * Technology used by 3rd party developers from major OEMS, such as Samsung, LG, Google, Xiaomi, OnePlus.
+   * Technology used by 3rd party developers from major OEMs, such as Samsung, LG, Google, Xiaomi, OnePlus.
 
 ###### BREW
    * Core kernel developer for BREW’s Operating System. 
