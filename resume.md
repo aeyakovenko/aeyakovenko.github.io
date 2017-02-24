@@ -3,30 +3,28 @@ ANATOLY YAKOVENKO
 
 aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [LinkedIn](https://www.linkedin.com/profile/view?id=312504086) | [resume](http://aeyakovenko.github.io/resume.html)
 
-### SKILLS
-#### Hardware and Systems
-  * Embedded Operating Systems, RTOS, [Linux Kernel], RPC, IPC, Android, Qualcomm MSMs, ARM, Hexagon DSP
-
-#### Languages and Tools
-  * C, C++, Haskell, Make, Lua, Bash, Python, Ruby, Java, Perforce, Git, GDB, JTAG, Trace32
-
-#### Patents
+### Patents
   * [US20150301955](https://www.google.com/patents/US20150301955) Extending protection domains to coprocessors.
   * [US8869176](https://www.google.com/patents/US8869176) Exposing host operating system services to an auxillary processor.
   * [US9092281](https://www.google.com/patents/US9092281) Fast remote procedure call.
 
 ### WORK EXPERIENCE
+#### Meososphere 2016 to Present
+   * Building the Data Center Operating System
+
 #### Qualcomm, San Diego CA
-##### Senior Staff Engineer Manager, 2015 to Present
+##### Senior Staff Engineer Manager, 2015 to 2016
 ##### Senior Staff Engineer, 2012 to 2015
 ##### Staff Engineer, 2009 - 2012
 ##### Senior Engineer, 2006 - 2009
 ##### Engineer, 2003 - 2006
 
 ###### Advanced Technologies Group
-   * Lead Architect on a team of 10 for high performance [DSP] off-loading software stack on Qualcomm chipsets for next-generation applications.
+   * Lead Architect (Lead inventor on 3 [patents]) on a team of 10 of a high performance Hexagon [DSP] off-loading software stack for next-generation applications.
+   * Designed and comercialized custom high performance System on a Chip firmware and application level software on 5 different Operating Systems.
    * Commercial applications include Augmented Reality, Virtual Reality, 3D Camera processing, 4K video post-processing, and GoogleX’s Project Tango.
-   * Technology used by 3rd party developers from major OEMs, such as Samsung, LG, Google, Xiaomi, OnePlus.
+   * Technology used by ~100 licenced 3rd party developers from major OEMs, such as Samsung, LG, GoogleX, Xiaomi, OnePlus and many others.
+   * 1st comercial Tango phone device, 1st phone 3d camera, 25% performance improvement in phone motion-to-photon 6DOF tracking over leading dedicated VR headset.
 
 ###### BREW
    * Core kernel developer for BREW’s Operating System. 
@@ -56,8 +54,12 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 #### Bachelor of Science in Computer Science
 ##### University of Illinois at Urbana-Champaign, 2003
 
+### Keywords
+  * C, C++, Haskell, Make, Lua, Bash, Python, Perforce, Git, GDB, JTAG, Trace32, System on a Chip, Embedded Operating Systems, RTOS, [Linux Kernel], RPC, IPC, Android, Qualcomm MSMs, ARM, Hexagon DSP
+
 [Linux Kernel]: https://www.codeaurora.org/cgit/quic/le/kernel/msm/tree/drivers/char/adsprpc.c?h=msm-3.4
 [Machine Learning]: https://github.com/aeyakovenko/rbm
 [DSP]: https://developer.qualcomm.com/software/hexagon-dsp-sdk/dsp-processor
 [Alescere]: http://www.linuxjournal.com/article/6763
 [RTP]: http://gst-plugins-farsight.sourcearchive.com/documentation/0.12.10-3/jrtplib__c_8cpp-source.html
+[patents]: https://www.google.com/?tbm=pts&gws_rd=ssl#tbm=pts&q=ininventor%3A%22anatoly%20e.%20yakovenko%22
