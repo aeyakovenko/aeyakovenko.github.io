@@ -5,12 +5,12 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 
 ### Patents
   * [US20150301955](https://www.google.com/patents/US20150301955) Extending protection domains to coprocessors.
-  * [US8869176](https://www.google.com/patents/US8869176) Exposing host operating system services to an auxillary processor.
+  * [US8869176](https://www.google.com/patents/US8869176) Exposing host operating system services to an auxiliary processor.
   * [US9092281](https://www.google.com/patents/US9092281) Fast remote procedure call.
 
 ### WORK EXPERIENCE
 #### Meososphere 2016 to Present
-   * Building the Data Center Operating System
+   * Building highly scalable networking features for container orchestration using Continuously Replicated Data Types, Gossip, multicast, IPVS, IPSec for Mesos and the Data Center Operating System.
 
 #### Qualcomm, San Diego CA
 ##### Senior Staff Engineer Manager, 2015 to 2016
@@ -21,7 +21,7 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 
 ###### Advanced Technologies Group
    * Lead Architect (Lead inventor on 3 [patents]) on a team of 10 of a high performance Hexagon [DSP] off-loading software stack for next-generation applications.
-   * Designed and comercialized custom high performance System on a Chip firmware and application level software on 5 different Operating Systems.
+   * Designed and commercialized custom high performance System on a Chip firmware and application level software on 5 different Operating Systems.
    * Commercial applications include Augmented Reality, Virtual Reality, 3D Camera processing, 4K video post-processing, and GoogleX’s Project Tango.
    * Technology used by ~100 licenced 3rd party developers from major OEMs, such as Samsung, LG, GoogleX, Xiaomi, OnePlus and many others.
    * 1st comercial Tango phone device, 1st phone 3d camera, 25% performance improvement in phone motion-to-photon 6DOF tracking over leading dedicated VR headset.
@@ -55,7 +55,7 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 ##### University of Illinois at Urbana-Champaign, 2003
 
 ### Keywords
-  * C, C++, Haskell, Make, Lua, Bash, Python, Perforce, Git, GDB, JTAG, Trace32, System on a Chip, Embedded Operating Systems, RTOS, [Linux Kernel], RPC, IPC, Android, Qualcomm MSMs, ARM, Hexagon DSP
+  * C, C++, Haskell, Erlang, Make, Lua, Bash, Python, Perforce, Git, GDB, JTAG, Trace32, System on a Chip, Embedded Operating Systems, RTOS, [Linux Kernel], RPC, IPC, Android, Qualcomm MSMs, ARM, Hexagon DSP, Linux Namespaces, Containers, Docker, IPSec, IPVS, L4LB, Mesos.
 
 [Linux Kernel]: https://www.codeaurora.org/cgit/quic/le/kernel/msm/tree/drivers/char/adsprpc.c?h=msm-3.4
 [Machine Learning]: https://github.com/aeyakovenko/rbm
