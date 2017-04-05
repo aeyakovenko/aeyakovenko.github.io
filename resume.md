@@ -16,9 +16,6 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
 ##### Senior Staff Engineer Manager, 2015 to 2016
 ##### Senior Staff Engineer, 2012 to 2015
 ##### Staff Engineer, 2009 - 2012
-##### Senior Engineer, 2006 - 2009
-##### Engineer, 2003 - 2006
-
 ###### Advanced Technologies Group
    * Lead Architect, core engineer, and lead inventor on 3 [patents], on a team of 10 of a high performance Hexagon [DSP] off-loading software stack for next-generation applications.
    * Designed and commercialized custom high performance System on a Chip firmware and application level software on 5 different Operating Systems and dozen SoC variants.
@@ -26,11 +23,13 @@ aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [Link
    * Technology used by ~100 licenced 3rd party developers from major OEMs, such as Samsung, LG, GoogleX, Xiaomi, OnePlus and many others.
    * Enabled 1st commercial Tango phone device, 1st phone 3d camera, 25% performance improvement in phone motion-to-photon 6DOF tracking over leading dedicated VR headset.
 
+##### Senior Engineer, 2006 - 2009
 ###### BREW
-   * Core kernel developer for BREW’s Operating System. 
+   * Core kernel developer for BREW, a phone Operating System.
    * Built critical features such as application sand-boxing, kernel containers, device driver framework, IPC stack, system call tracing tools, IDL compilers.
    * APIs and tools used by thousands of 3rd party developers, code shipped on hundreds of different handsets and in millions of units.
 
+##### Engineer, 2003 - 2006
 ###### QChat
    * Software developer for server components of a Push2Talk service.
    * Implemented network protocols such as SIP/RTP/HTTP, and high performance logging and tracing tools for a large distributed system with over 40 components.
