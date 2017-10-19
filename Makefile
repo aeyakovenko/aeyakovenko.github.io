@@ -3,7 +3,7 @@
 MARKDOWN = pandoc --from markdown_github --standalone -c github.css #--to $(subst .,,$(suffix $@))
 MARKDOWN2 = pandoc --from markdown_github --standalone -c pandoc.css #--to $(subst .,,$(suffix $@))
 all: $(patsubst %.md,%.html,$(wildcard *.md))
-all: $(patsubst %.md,%.pdf,$(wildcard *.md))
+all: $(filter-out index.pdf,$(patsubst %.md,%.pdf,$(wildcard *.md)))
 
 clean:
 	 rm -f $(patsubst %.md,%.html,$(wildcard *.md))

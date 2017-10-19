@@ -3,8 +3,8 @@ ANATOLY YAKOVENKO
 
 aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [LinkedIn](https://www.linkedin.com/profile/view?id=312504086) | [resume](http://aeyakovenko.github.io/resume.html)
 
-foldr map and curry in the C preprocessor language
---------------------------------------------------
+[HOFs in CPP](#hofs-in-cpp)
+---------------------------
 
 Might as well do scheme next :).
 
@@ -130,8 +130,8 @@ int main(void) {
 }
 ```
 
-wtf C!
------------------------
+[wtf C](#wtf-c)
+---------------
 
 ```C
 #include <stdio.h>
@@ -159,8 +159,8 @@ So the reason a function has a size even though its unasignable is so we can do 
 ```
 
 
-counting args with C macros
----------------------------
+[counting args in CPP](#count-args-in-cpp)
+------------------------------------------
 
 ```C
 /**
@@ -189,8 +189,8 @@ int main() {
 }
 ```
 
-compile time assert
--------------------
+[compile time assert](compile time assert)
+------------------------------------------
 
 ```C
 #define C_ASSERT(test) \
@@ -200,16 +200,16 @@ compile time assert
     }
 ```
 
-make repl, sort of
-------------------
+[make repl](#make-repl)
+-----------------------
 
 ```Makefile
 #run make '$(expression)' to see what make thinks the expression evaluates to from your rules
 $$%:;@$(call true)$(info $(call or,$$$*))
 ```
 
-make + cabal
-------------
+[make cabal](#make-cabal)
+-------------------------
 
 ```Makefile
 #list of haskell sources
@@ -242,22 +242,22 @@ dist/setup-config:$(cabal_files) Makefile
 $$%:;@$(call true)$(info $(call or,$$$*))
 ```
 
-cgdb, highlight current line
-----------------------------
+[cgdb highlight current line](#cgdb-hi-cul)
+--------------------------------------------
 
 ```VimL
 :hi SelectedLineNr cterm=reverse
 ```
 
-printing all the gcc defines
-----------------------------
+[printing all the gcc defines](#printing-all-the-gcc-defines)
+--------------------------------------------------------
 
 ```bash
 gcc -dM -E - < /dev/null
 ```
 
 
-disable warnings in gcc
+[disable warnings in gcc](#disable-warnings-in-gcc)
 -----------------------
 
 ```C
@@ -266,29 +266,15 @@ disable warnings in gcc
 
 works great for generated code.
 
-git-add-p4-opened
------------------
+[git-add-p4-opened](#git-add-p4-opened)
+----------------------------------
 
 ```bash
 alias git-add-p4-opened="p4 opened | cut -f 1 -d '#' | xargs p4 where | cut -f 3 -d ' ' | xargs git add"
 ```
 
-It's All Text! in OSX
----------------------
-
-```bash
-tempfoo=macvimreplacetext
-FILE=`mktemp "/tmp/${tempfoo}.XXXXXX"`
-cat /dev/stdin > "$FILE";
-/usr/local/bin/mvim -f "$FILE"
-cat "$FILE"
-rm "$FILE"
-```
-
-Create an automator service to launch MacVim and replace selected text.
-
-map capslock to leftctrl in windows
------------------------------------
+[map capslock to leftctrl in windows](#win-capslock)
+----------------------------------------------------
 create a file with the following registery script, then run it
 ```
 REGEDIT4
@@ -296,8 +282,8 @@ REGEDIT4
 "Scancode Map"=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
 ```
 
-.vimrc
-------
+[.vimrc](#vimrc)
+----------------
 ```VimL
 "remembering cursor position between sessions
 :set viminfo='10,\"100,:20,%,n~/.viminfo
@@ -318,9 +304,9 @@ augroup END
 :set nowrapscan
 :set autoindent
 :set expandtab
-:set tabstop=3
+:set tabstop=4
 :set ruler
-:set shiftwidth=3
+:set shiftwidth=4
 :set ignorecase
 :set smartcase
 :set tags=./tags;
