@@ -1,7 +1,7 @@
 ANATOLY YAKOVENKO
 -----------------
 
-aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [LinkedIn](https://www.linkedin.com/profile/view?id=312504086) | [resume](http://aeyakovenko.github.io/resume.html)
+aeyakovenko@gmail.com   |   [GitHub](https://github.com/aeyakovenko)   |   [LinkedIn](https://www.linkedin.com/in/anatoly-yakovenko/) | [resume](http://aeyakovenko.github.io/resume.html)
 
 [HOFs in CPP](#hofs-in-cpp)
 ---------------------------
